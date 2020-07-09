@@ -1,7 +1,7 @@
 {
-  "name": "eeeplus-theme",
+  "name": "@ucirvine/eeeplus-theme",
   "version": "0.1.0",
-  "license": "Educational Community License, Version 2.0",
+  "license": "SEE LICENSE IN LICENSE",
   "private": false,
   "scripts": {
     "merge": "gulp"
@@ -13,5 +13,21 @@
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-scss-combine": "^1.0.0"
-  }
+  },
+  "description": "EEE+ Theme",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucirvine/eeeplus-theme.git"
+  },
+  "keywords": [
+    "theme",
+    "eeeplus"
+  ],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ucirvine/eeeplus-theme/issues"
+  },
+  "homepage": "https://github.com/ucirvine/eeeplus-theme#readme"
 }
