@@ -1,0 +1,17 @@
+{
+  "name": "eeeplus-theme",
+  "version": "0.1.0",
+  "license": "Educational Community License, Version 2.0",
+  "private": false,
+  "scripts": {
+    "merge": "gulp"
+  },
+  "files": [
+    "theme.scss"
+  ],
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-scss-combine": "^1.0.0"
+  }
+}
