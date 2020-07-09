@@ -10,8 +10,11 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
 
 ### Requirements
 
+**To make changes**
 * GitHub.com account
 * Write access to the `eeeplus-theme` on the `ucirvine` GitHub.com account
+
+**To publish to the package**
 * npmjs.com account
 * Access to the `ucirvine` NPM account
 * Added your NPM account to your command line by running `npm adduser` and following the prompts
@@ -22,6 +25,8 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
 1. Run `npm merge` to merge all the files into `dist/theme.scss`
 1. Update `package.json` to increment the version number appropriately. The version number follows [SemVer](https://semver.org/) as with
    our other tools.
-1. Commit the changes
-1. Publish the changes via npm: `npm publish`
-  * Note the repository requires 2FA to be enabled for you to publish
+1. Commit the changes to a new branch and submit a pull request
+
+### Publishing changes
+
+Publish the changes via npm: `npm publish` -- Note the repository requires 2FA to be enabled for you to publish
