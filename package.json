@@ -1,10 +1,10 @@
 {
   "name": "@ucirvine/eeeplus-theme",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "license": "SEE LICENSE IN LICENSE",
   "private": false,
   "scripts": {
-    "merge": "gulp"
+    "build": "gulp"
   },
   "files": [
     "theme.scss"
@@ -12,7 +12,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-scss-combine": "^1.0.0"
+    "gulp-sass": "^4.1.0",
+    "gulp-scss-combine": "^1.0.0",
+    "gulp-strip-css-comments": "^2.0.0"
   },
   "description": "EEE+ Theme",
   "main": "gulpfile.js",

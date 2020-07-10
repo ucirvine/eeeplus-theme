@@ -1,15 +1,46 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-scss-combine');
-var concat = require('gulp-concat');
+const gulp = require('gulp');
+const sassCombine = require('gulp-scss-combine');
+const sass = require('gulp-sass');
+const concat = require('gulp-concat');
+const stripCssComments = require('gulp-strip-css-comments');
 
-gulp.task('default', mergeSass);
 
+/**
+ * This merges all the SCSS in src into theme.scss
+ */
 function mergeSass(done) {
-  return gulp.src(['src/colors.scss'])
+  return gulp.src(
+    [
+      'src/colors.scss',
+      'src/tool-colors.scss',
+      'src/typography.scss',
+      'src/demo.scss'
+    ])
     .pipe(concat('theme.scss'))
-    .pipe(sass())
+    .pipe(sassCombine())
     .pipe(gulp.dest('./dist/'))
     ;
 }
+
+/**
+ * This takes theme.scss and generates a CSS file to be used in the docs (or if you want to include it)
+ */
+function generateCss(done) {
+  return gulp.src('dist/theme.scss')
+    .pipe(sass())
+    .pipe(stripCssComments())
+    .pipe(gulp.dest('./docs/'))
+    ;
+}
+
+gulp.task('merge', mergeSass);
+gulp.task('generate', generateCss);
+
+gulp.task('default',
+  gulp.series('merge', 'generate', function (done) {
+    done();
+  })
+);
+
