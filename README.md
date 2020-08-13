@@ -10,6 +10,10 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
 
 ### Requirements
 
+**Software**
+* PHP 7.3
+* NPM (latest LTS)
+
 **To make changes**
 * GitHub.com account
 * Write access to the `eeeplus-theme` on the `ucirvine` GitHub.com account
@@ -22,7 +26,7 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
 ### Making changes
 
 1. Update any scss files you need. If you add a new file, be sure to add it to `gulpfile.js` so it gets merged
-1. Run `npm build` to merge all the files into `dist/theme.scss`
+1. Run `npm run-script build` to merge all the files into `dist/theme.scss`
 1. Update `package.json` to increment the version number appropriately. The version number follows [SemVer](https://semver.org/) as with
    our other tools.
 1. Commit the changes to a new branch and submit a pull request

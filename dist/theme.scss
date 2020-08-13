@@ -1,7 +1,25 @@
 /* Put color variables in here */
-$uciblue: rgba(0, 125, 207, 1);
-$ucigold: rgba(241, 193, 31, 1);
-
+$uciblue: #005993;
+$royalblue: #007DCF;
+$oceanblue: #3B8BC5;
+$evergreen: #01796B;
+$ucigold: #F1C120;
+$yellow: #F5D158;
+$valencia: #EF6C01;
+$olive: #5D884B;
+$red: #B81137;
+$purple: #7B1FA2;
+$sienna: #C96620;
+$black: #000000;
+$darkgrey: #333333;
+$slate: #4F4F4F;
+$stone: #828282;
+$grey: #BDBDBD;
+$lightgrey: #E0E0E0;
+$smoke: #F2F2F2;
+$snow: #F6F8FB;
+$lightyellow: #FEFBF2;
+$highlightyellow: #FFFFDD;
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
 $classmail-blue: rgba(59, 139, 197, 1);
@@ -15,11 +33,27 @@ $classmail-blue: rgba(59, 139, 197, 1);
  
 
  #eeeplus-theme-demo {
-     // Generic colors
-     .bg-uciblue { background-color: $uciblue; }
-     .bg-ucigold { background-color: $ucigold; }
-
-     // Tool colors
-     .bg-assistants-blue { background-color: $assistants-blue; }
-     .bg-classmail-blue { background-color: $classmail-blue; }
- }
+.bg-uciblue { background-color: $uciblue; }
+.bg-royalblue { background-color: $royalblue; }
+.bg-oceanblue { background-color: $oceanblue; }
+.bg-evergreen { background-color: $evergreen; }
+.bg-ucigold { background-color: $ucigold; }
+.bg-yellow { background-color: $yellow; }
+.bg-valencia { background-color: $valencia; }
+.bg-olive { background-color: $olive; }
+.bg-red { background-color: $red; }
+.bg-purple { background-color: $purple; }
+.bg-sienna { background-color: $sienna; }
+.bg-black { background-color: $black; }
+.bg-darkgrey { background-color: $darkgrey; }
+.bg-slate { background-color: $slate; }
+.bg-stone { background-color: $stone; }
+.bg-grey { background-color: $grey; }
+.bg-lightgrey { background-color: $lightgrey; }
+.bg-smoke { background-color: $smoke; }
+.bg-snow { background-color: $snow; }
+.bg-lightyellow { background-color: $lightyellow; }
+.bg-highlightyellow { background-color: $highlightyellow; }
+.bg-assistants-blue { background-color: $assistants-blue; }
+.bg-classmail-blue { background-color: $classmail-blue; }
+}

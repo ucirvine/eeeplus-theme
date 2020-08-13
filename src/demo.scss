@@ -6,11 +6,27 @@
  @import 'tool-colors.scss';
 
  #eeeplus-theme-demo {
-     // Generic colors
-     .bg-uciblue { background-color: $uciblue; }
-     .bg-ucigold { background-color: $ucigold; }
-
-     // Tool colors
-     .bg-assistants-blue { background-color: $assistants-blue; }
-     .bg-classmail-blue { background-color: $classmail-blue; }
- }
+.bg-uciblue { background-color: $uciblue; }
+.bg-royalblue { background-color: $royalblue; }
+.bg-oceanblue { background-color: $oceanblue; }
+.bg-evergreen { background-color: $evergreen; }
+.bg-ucigold { background-color: $ucigold; }
+.bg-yellow { background-color: $yellow; }
+.bg-valencia { background-color: $valencia; }
+.bg-olive { background-color: $olive; }
+.bg-red { background-color: $red; }
+.bg-purple { background-color: $purple; }
+.bg-sienna { background-color: $sienna; }
+.bg-black { background-color: $black; }
+.bg-darkgrey { background-color: $darkgrey; }
+.bg-slate { background-color: $slate; }
+.bg-stone { background-color: $stone; }
+.bg-grey { background-color: $grey; }
+.bg-lightgrey { background-color: $lightgrey; }
+.bg-smoke { background-color: $smoke; }
+.bg-snow { background-color: $snow; }
+.bg-lightyellow { background-color: $lightyellow; }
+.bg-highlightyellow { background-color: $highlightyellow; }
+.bg-assistants-blue { background-color: $assistants-blue; }
+.bg-classmail-blue { background-color: $classmail-blue; }
+}
