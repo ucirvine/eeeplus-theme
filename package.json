@@ -1,10 +1,10 @@
 {
   "name": "@ucirvine/eeeplus-theme",
-  "version": "0.3.1",
+  "version": "0.4.1",
   "license": "SEE LICENSE IN LICENSE",
   "private": false,
   "scripts": {
-    "build": "gulp && php generator/generate_demo_files.php"
+    "build": "php generator/generate_demo_files.php && gulp"
   },
   "files": [
     "dist/*"

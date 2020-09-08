@@ -1,17 +1,17 @@
 <?php
 
 /**
- * Return true if the line is a comment (starts with /*)
+ * Return true if the line is a comment or non variable line (e.g. empty space)
  *
  * @param string $line
  * @return bool
  */
-function is_comment_line(string $line): bool
+function isVariableLine(string $line): bool
 {
-    if (strpos($line, '/*') === false) {
-        return false;
+    if ((strpos($line, '/*') === false) and (strpos($line, '$') !== false)) {
+        return true;
     }
-    return true;
+    return false;
 }
 
 /**
@@ -70,7 +70,7 @@ function getBackgroundColorVariableNamesFromSourceForColors()
     $file = fopen('src/colors.scss', 'r');
     while (!feof($file)) {
         $line = fgets($file);
-        if (is_comment_line($line)) {
+        if (!isVariableLine($line)) {
             continue;
         }
         $colorVariables[] = parseLineForBackgroundVariableName($line);
@@ -92,7 +92,7 @@ function getBackgroundColorVariableNamesFromSourceForToolColors()
     $file = fopen('src/tool-colors.scss', 'r');
     while (!feof($file)) {
         $line = fgets($file);
-        if (is_comment_line($line)) {
+        if (!isVariableLine($line)) {
             continue;
         }
         $colorVariables[] = parseLineForBackgroundVariableName($line);
