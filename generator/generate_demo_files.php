@@ -102,6 +102,54 @@ function getBackgroundColorVariableNamesFromSourceForToolColors()
     return $colorVariables;
 }
 
+/**
+ * Returns true if the line is a single class definition
+ *
+ * @param string $line
+ * @return bool
+ */
+function isClassLine(string $line)
+{
+    if ((strpos($line, '.') === 0) and (strpos($line, ',') === false)) {
+        return true;
+    }
+    return false;
+}
+
+/**
+ * Given a SCSS class definition line, get the class name without "."
+ *
+ * @param string $scssLine
+ * @return string
+ */
+function parseLineForClassName(string $scssLine): string
+{
+    list($className, $bracket) = explode(" ", $scssLine);
+    return str_replace('.', '', $className);
+}
+
+/**
+ * Get the button class names form the button source file
+ *
+ * @return array
+ */
+function getButtonClassNamesFromSourceForButtons()
+{
+    $buttonClassNames = [];
+
+    $file = fopen('src/buttons.scss', 'r');
+    while (!feof($file)) {
+        $line = fgets($file);
+        if (!isClassLine($line)) {
+            continue;
+        }
+        $buttonClassNames[] = parseLineForClassName($line);
+    }
+    fclose($file);
+
+    return $buttonClassNames;
+}
+
 /*
  * First generate the demo SCSS file to use in the index file
  */
@@ -121,6 +169,7 @@ SCSS;
 
 $colorVariables = getBackgroundColorVariableNamesFromSourceForColors();
 $toolColorVariables = getBackgroundColorVariableNamesFromSourceForToolColors();
+$buttonClassNames = getButtonClassNamesFromSourceForButtons();
 
 $scssLines = array_merge($scssLines, generateDemoScssBackgroundColors(
     array_merge(

@@ -70,6 +70,27 @@
         $counter++;
     }
     ?>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col">
+            <h2><a href="#buttons">#</a>Buttons</h2>
+        </div>
+    </div>
+
+
+    <?php
+    $counter = 0;
+    foreach($buttonClassNames as $className) {
+        ?>
+        <div class="pb-2">
+            <button class="btn <?php echo $className; ?>">
+                <?php echo $className; ?>
+            </button>
+        </div>
+        <?php
+    }
+    ?>
 
 
 </main>

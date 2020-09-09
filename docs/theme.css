@@ -135,3 +135,28 @@
 
 #eeeplus-theme-demo .bg-classmail-blue {
   background-color: #3b8bc5; }
+
+.btn-primary, .btn-secondary {
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  line-height: 2.9rem;
+  padding: 0;
+  border-color: #007DCF;
+  text-transform: uppercase; }
+  .btn-primary:hover, .btn-secondary:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: #005993; }
+
+.btn-primary {
+  background-color: #007DCF; }
+  .btn-primary:hover {
+    background-color: #005993; }
+
+.btn-secondary {
+  background-color: white;
+  color: #007DCF; }
+  .btn-secondary:hover {
+    background-color: white;
+    color: #005993; }

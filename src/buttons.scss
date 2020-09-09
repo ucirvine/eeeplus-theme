@@ -1,0 +1,31 @@
+.btn-primary, .btn-secondary {
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  line-height: 2.9rem;  // the 2.9 centers the text vertically in the button bc Lato adds a tiny space on the top
+  padding: 0;
+  border-color: $royalblue;
+  text-transform: uppercase;
+  &:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: $uciblue;
+  }
+}
+
+.btn-primary {
+  background-color: $royalblue;
+  &:hover {
+    background-color: $uciblue;
+  }
+}
+
+.btn-secondary {
+  background-color: white;
+  color: $royalblue;
+  &:hover {
+    background-color: white;
+    color: $uciblue;
+  }
+}
+
