@@ -145,6 +145,7 @@ function getButtonClassNamesFromSourceForButtons()
         }
         $className = parseLineForClassName($line);
         if ($className === 'btn-sm') {
+            // Add the two types of small buttons - primary and secondary
             $buttonClassNames[] = 'btn-primary '.parseLineForClassName($line);
             $buttonClassNames[] = 'btn-secondary '.parseLineForClassName($line);
 
@@ -157,6 +158,14 @@ function getButtonClassNamesFromSourceForButtons()
     return $buttonClassNames;
 }
 
+/**
+ * Get the name of the button from the class name,
+ * because if we just use the class name as the name,
+ * it would be too long.
+ *
+ * @param $classNames
+ * @return array
+ */
 function getButtonNamesFromClassNames($classNames)
 {
     $buttonNames = [];
