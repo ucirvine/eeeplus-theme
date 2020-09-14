@@ -85,10 +85,11 @@
         ?>
         <div class="pb-2">
             <button class="btn <?php echo $className; ?>">
-                <?php echo $className; ?>
+                <?php echo $buttonNames[$counter]; ?>
             </button>
         </div>
         <?php
+        $counter++;
     }
     ?>
 

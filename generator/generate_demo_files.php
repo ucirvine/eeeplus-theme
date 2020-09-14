@@ -143,11 +143,40 @@ function getButtonClassNamesFromSourceForButtons()
         if (!isClassLine($line)) {
             continue;
         }
-        $buttonClassNames[] = parseLineForClassName($line);
+        $className = parseLineForClassName($line);
+        if ($className === 'btn-sm') {
+            $buttonClassNames[] = 'btn-primary '.parseLineForClassName($line);
+            $buttonClassNames[] = 'btn-secondary '.parseLineForClassName($line);
+
+        } else {
+            $buttonClassNames[] = parseLineForClassName($line);
+        }
     }
     fclose($file);
 
     return $buttonClassNames;
+}
+
+function getButtonNamesFromClassNames($classNames)
+{
+    $buttonNames = [];
+    foreach ($classNames as $className) {
+        switch ($className) {
+            case 'btn-primary':
+                $buttonNames[] = 'primary';
+                break;
+            case 'btn-secondary':
+                $buttonNames[] = 'secondary';
+                break;
+            case 'btn-primary btn-sm':
+                $buttonNames[] = 'small 1';
+                break;
+            case 'btn-secondary btn-sm':
+                $buttonNames[] = 'small 2';
+                break;
+        }
+    }
+    return $buttonNames;
 }
 
 /*
@@ -170,6 +199,7 @@ SCSS;
 $colorVariables = getBackgroundColorVariableNamesFromSourceForColors();
 $toolColorVariables = getBackgroundColorVariableNamesFromSourceForToolColors();
 $buttonClassNames = getButtonClassNamesFromSourceForButtons();
+$buttonNames = getButtonNamesFromClassNames($buttonClassNames);
 
 $scssLines = array_merge($scssLines, generateDemoScssBackgroundColors(
     array_merge(
