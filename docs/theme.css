@@ -73,6 +73,9 @@
 #eeeplus-theme-demo .bg-oceanblue {
   background-color: #3B8BC5; }
 
+#eeeplus-theme-demo .bg-cerulean {
+  background-color: #7FBDE6; }
+
 #eeeplus-theme-demo .bg-evergreen {
   background-color: #01796B; }
 
@@ -136,6 +139,7 @@
 #eeeplus-theme-demo .bg-classmail-blue {
   background-color: #3b8bc5; }
 
+
 .btn-primary, .btn-secondary {
   width: 10rem;
   font-size: 1rem;
@@ -148,11 +152,21 @@
   .btn-primary:hover, .btn-secondary:hover {
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: #005993; }
+  .btn-primary.disabled, .btn-secondary.disabled {
+    opacity: 1;
+    border-color: #7FBDE6; }
+    .btn-primary.disabled:hover, .btn-secondary.disabled:hover {
+      box-shadow: none;
+      cursor: default; }
+    .btn-primary.disabled:focus, .btn-secondary.disabled:focus {
+      box-shadow: none; }
 
 .btn-primary {
   background-color: #007DCF; }
   .btn-primary:hover {
     background-color: #005993; }
+  .btn-primary.disabled {
+    background-color: #7FBDE6; }
 
 .btn-secondary {
   background-color: white;
@@ -160,6 +174,9 @@
   .btn-secondary:hover {
     background-color: white;
     color: #005993; }
+  .btn-secondary.disabled {
+    background-color: white;
+    color: #7FBDE6; }
 
 .btn-sm {
   width: 6.875rem;

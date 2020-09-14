@@ -148,12 +148,16 @@ function getButtonClassNamesFromSourceForButtons()
             // Add the two types of small buttons - primary and secondary
             $buttonClassNames[] = 'btn-primary '.parseLineForClassName($line);
             $buttonClassNames[] = 'btn-secondary '.parseLineForClassName($line);
-
         } else {
             $buttonClassNames[] = parseLineForClassName($line);
         }
     }
     fclose($file);
+
+    // Add the disabled type of each button
+    foreach ($buttonClassNames as $buttonClassName) {
+        $buttonClassNames[] = 'disabled '.$buttonClassName;
+    }
 
     return $buttonClassNames;
 }
@@ -177,11 +181,26 @@ function getButtonNamesFromClassNames($classNames)
             case 'btn-secondary':
                 $buttonNames[] = 'secondary';
                 break;
+            case 'disabled btn-primary':
+                $buttonNames[] = 'primary';
+                break;
+            case 'disabled btn-secondary':
+                $buttonNames[] = 'secondary';
+                break;
             case 'btn-primary btn-sm':
                 $buttonNames[] = 'small 1';
                 break;
             case 'btn-secondary btn-sm':
                 $buttonNames[] = 'small 2';
+                break;
+            case 'disabled btn-primary btn-sm':
+                $buttonNames[] = 'small 1';
+                break;
+            case 'disabled btn-secondary btn-sm':
+                $buttonNames[] = 'small 2';
+                break;
+            default:
+                $buttonNames[] = 'disabled';
                 break;
         }
     }

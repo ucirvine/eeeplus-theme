@@ -2,6 +2,7 @@
 $uciblue: #005993;
 $royalblue: #007DCF;
 $oceanblue: #3B8BC5;
+$cerulean: #7FBDE6;
 $evergreen: #01796B;
 $ucigold: #F1C120;
 $yellow: #F5D158;
@@ -134,6 +135,7 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-uciblue { background-color: $uciblue; }
 .bg-royalblue { background-color: $royalblue; }
 .bg-oceanblue { background-color: $oceanblue; }
+.bg-cerulean { background-color: $cerulean; }
 .bg-evergreen { background-color: $evergreen; }
 .bg-ucigold { background-color: $ucigold; }
 .bg-yellow { background-color: $yellow; }
@@ -157,12 +159,14 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-classmail-blue { background-color: $classmail-blue; }
 }
 
+/* Put button thing in here */
+
 .btn-primary, .btn-secondary {
   width: 10rem;
   font-size: 1rem;
   font-weight: 700;
   height: 3rem;
-  line-height: 2.9rem;  // the 2.9 centers the text vertically in the button bc Lato adds a tiny space on the top
+  line-height: 2.9rem;  // The 2.9 centers the text vertically in the button bc Lato adds a tiny space on the top
   padding: 0;
   border-color: $royalblue;
   text-transform: uppercase;
@@ -170,12 +174,26 @@ $classmail-blue: rgba(59, 139, 197, 1);
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: $uciblue;
   }
+  &.disabled {
+    opacity: 1;  // This overrides the default opacity since we don't want any transparency
+    border-color: $cerulean;
+    &:hover {
+      box-shadow: none;
+      cursor: default;
+    }
+    &:focus {
+      box-shadow: none;  // This is so that if a user click on the disabled button, it won't be outlined
+    }
+  }
 }
 
 .btn-primary {
   background-color: $royalblue;
   &:hover {
     background-color: $uciblue;
+  }
+  &.disabled {
+    background-color: $cerulean;
   }
 }
 
@@ -185,6 +203,10 @@ $classmail-blue: rgba(59, 139, 197, 1);
   &:hover {
     background-color: white;
     color: $uciblue;
+  }
+  &.disabled {
+    background-color: white;
+    color: $cerulean;
   }
 }
 

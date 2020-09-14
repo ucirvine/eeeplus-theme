@@ -82,8 +82,13 @@
     <?php
     $counter = 0;
     foreach($buttonClassNames as $className) {
-        ?>
-        <div class="pb-2">
+        if ($counter != 0 and $counter % 4 == 0) {
+            echo '</div>';
+        }
+        if ($counter == 0 OR $counter % 4 == 0) { echo '<div class="row mt-2">'; } ?>
+
+
+        <div class="pb-2 pr-1">
             <button class="btn <?php echo $className; ?>">
                 <?php echo $buttonNames[$counter]; ?>
             </button>
@@ -92,6 +97,7 @@
         $counter++;
     }
     ?>
+    </div>
 
 
 </main>
