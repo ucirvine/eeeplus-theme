@@ -217,3 +217,28 @@ $classmail-blue: rgba(59, 139, 197, 1);
   line-height: 2.35rem;
 }
 
+.giles-button {
+  color: $royalblue;
+  background-color: $snow;
+  border-color: $royalblue;
+  height: 3rem;
+  font-weight: bold;
+  &:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: $uciblue;
+    color: $uciblue;
+  }
+  &.disabled {
+    opacity: 1;  // This overrides the default opacity since we don't want any transparency
+    border-color: $cerulean;
+    color: $cerulean;
+    &:hover {
+      box-shadow: none;
+      cursor: default;
+      color: $cerulean;
+    }
+    &:focus {
+      box-shadow: none;  // This is so that if a user clicks on the disabled button, it won't be outlined
+    }
+  }
+}

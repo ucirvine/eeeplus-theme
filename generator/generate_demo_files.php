@@ -145,19 +145,17 @@ function getButtonClassNamesFromSourceForButtons()
         }
         $className = parseLineForClassName($line);
         if ($className === 'btn-sm') {
-            // Add the two types of small buttons - primary and secondary
+            // Add the two types of small buttons - primary and secondary, along with the disabled versions
             $buttonClassNames[] = 'btn-primary '.parseLineForClassName($line);
+            $buttonClassNames[] = 'disabled btn-primary '.parseLineForClassName($line);
             $buttonClassNames[] = 'btn-secondary '.parseLineForClassName($line);
+            $buttonClassNames[] = 'disabled btn-secondary '.parseLineForClassName($line);
         } else {
             $buttonClassNames[] = parseLineForClassName($line);
+            $buttonClassNames[] = 'disabled '.parseLineForClassName($line);
         }
     }
     fclose($file);
-
-    // Add the disabled type of each button
-    foreach ($buttonClassNames as $buttonClassName) {
-        $buttonClassNames[] = 'disabled '.$buttonClassName;
-    }
 
     return $buttonClassNames;
 }
@@ -190,6 +188,10 @@ function getButtonNamesFromClassNames($classNames)
             case 'btn-secondary btn-sm':
             case 'disabled btn-secondary btn-sm':
                 $buttonNames[] = 'small 2';
+                break;
+            case 'giles-button':
+            case 'disabled giles-button':
+                $buttonNames[] = 'Read about OIT’s Fall 2020 Educational Technology Updates';
                 break;
             default:
                 $buttonNames[] = 'disabled';

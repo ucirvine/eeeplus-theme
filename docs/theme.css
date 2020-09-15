@@ -183,3 +183,24 @@
   font-size: 0.875rem;
   height: 2.375rem;
   line-height: 2.35rem; }
+
+.giles-button {
+  color: #007DCF;
+  background-color: #F6F8FB;
+  border-color: #007DCF;
+  height: 3rem;
+  font-weight: bold; }
+  .giles-button:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: #005993;
+    color: #005993; }
+  .giles-button.disabled {
+    opacity: 1;
+    border-color: #7FBDE6;
+    color: #7FBDE6; }
+    .giles-button.disabled:hover {
+      box-shadow: none;
+      cursor: default;
+      color: #7FBDE6; }
+    .giles-button.disabled:focus {
+      box-shadow: none; }
