@@ -163,7 +163,7 @@ function getButtonClassNamesFromSourceForButtons()
 }
 
 /**
- * Get the name of the button from the class name,
+ * Get the name of the button from the class name
  * because if we just use the class name as the name,
  * it would be too long.
  *
@@ -176,26 +176,18 @@ function getButtonNamesFromClassNames($classNames)
     foreach ($classNames as $className) {
         switch ($className) {
             case 'btn-primary':
-                $buttonNames[] = 'primary';
-                break;
-            case 'btn-secondary':
-                $buttonNames[] = 'secondary';
-                break;
             case 'disabled btn-primary':
                 $buttonNames[] = 'primary';
                 break;
+            case 'btn-secondary':
             case 'disabled btn-secondary':
                 $buttonNames[] = 'secondary';
                 break;
             case 'btn-primary btn-sm':
-                $buttonNames[] = 'small 1';
-                break;
-            case 'btn-secondary btn-sm':
-                $buttonNames[] = 'small 2';
-                break;
             case 'disabled btn-primary btn-sm':
                 $buttonNames[] = 'small 1';
                 break;
+            case 'btn-secondary btn-sm':
             case 'disabled btn-secondary btn-sm':
                 $buttonNames[] = 'small 2';
                 break;

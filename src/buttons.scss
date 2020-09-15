@@ -1,4 +1,4 @@
-/* Put button thing in here */
+/* Put button things in here */
 
 .btn-primary, .btn-secondary {
   width: 10rem;
@@ -21,7 +21,7 @@
       cursor: default;
     }
     &:focus {
-      box-shadow: none;  // This is so that if a user click on the disabled button, it won't be outlined
+      box-shadow: none;  // This is so that if a user clicks on the disabled button, it won't be outlined
     }
   }
 }
