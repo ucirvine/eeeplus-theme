@@ -14,7 +14,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "gulp-scss-combine": "^1.0.0",
-    "gulp-strip-css-comments": "^2.0.0"
+    "gulp-strip-css-comments": "^2.0.0",
+    "lodash.template": "^4.5.0"
   },
   "description": "EEE+ Theme",
   "main": "gulpfile.js",
