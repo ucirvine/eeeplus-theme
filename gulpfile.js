@@ -5,6 +5,7 @@ const sassCombine = require('gulp-scss-combine');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const stripCssComments = require('gulp-strip-css-comments');
+const cssimport = require('gulp-cssimport');
 
 
 /**
@@ -19,6 +20,7 @@ function mergeSass(done) {
       'src/demo.scss'
     ])
     .pipe(concat('theme.scss'))
+    .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
     .pipe(sassCombine())
     .pipe(gulp.dest('./dist/'))
     ;
