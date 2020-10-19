@@ -52,6 +52,12 @@
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
+  font-weight: 600;
+  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
   font-weight: 700;
   src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
 
