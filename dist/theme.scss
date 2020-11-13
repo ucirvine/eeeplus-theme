@@ -161,14 +161,14 @@ $classmail-blue: rgba(59, 139, 197, 1);
 
 /* Put button things in here */
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-outline-primary {
   width: 10rem;
   font-size: 1rem;
   font-weight: 700;
   height: 3rem;
-  line-height: 2.9rem;  // The 2.9 centers the text vertically in the button bc Lato adds a tiny space on the top
+  line-height: 2.8rem;  // The 2.8 centers the text vertically in the button bc Lato adds a tiny space on the top
   padding: 0;
-  border-color: $royalblue;
+  border: 2px solid $royalblue;
   text-transform: uppercase;
   &:hover {
     box-shadow: 0 3px 3px 1px #aaa;
@@ -197,7 +197,7 @@ $classmail-blue: rgba(59, 139, 197, 1);
   }
 }
 
-.btn-secondary {
+.btn-secondary, .btn-outline-primary {
   background-color: white;
   color: $royalblue;
   &:hover {
@@ -214,15 +214,16 @@ $classmail-blue: rgba(59, 139, 197, 1);
   width: 6.875rem;
   font-size: 0.875rem;
   height: 2.375rem;
-  line-height: 2.35rem;
+  line-height: 2.2rem;
 }
 
 .giles-button {
   color: $royalblue;
   background-color: $snow;
-  border-color: $royalblue;
+  border: 2px solid $royalblue;
   height: 3rem;
   font-weight: bold;
+  line-height: 2rem;
   &:hover {
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: $uciblue;
@@ -241,4 +242,16 @@ $classmail-blue: rgba(59, 139, 197, 1);
       box-shadow: none;  // This is so that if a user clicks on the disabled button, it won't be outlined
     }
   }
+}
+
+.long-cta-btn {
+  width: 220px;
+  height: 48px;
+}
+
+.long-cta-btn-sm {
+  width: 170px;
+  height: 38px;
+  font-size: 0.875rem;
+  line-height: 2.2rem;
 }

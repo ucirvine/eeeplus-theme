@@ -150,6 +150,17 @@ function getButtonClassNamesFromSourceForButtons()
             $buttonClassNames[] = 'disabled btn-primary '.parseLineForClassName($line);
             $buttonClassNames[] = 'btn-secondary '.parseLineForClassName($line);
             $buttonClassNames[] = 'disabled btn-secondary '.parseLineForClassName($line);
+        } elseif ($className === 'long-cta-btn-sm') {
+            $buttonClassNames[] = 'btn-primary ' . $className;
+            $buttonClassNames[] = 'disabled btn-primary ' . $className;
+            $buttonClassNames[] = 'btn-secondary ' . $className;
+            $buttonClassNames[] = 'disabled btn-secondary ' . $className;
+        } elseif ($className === 'long-cta-btn') {
+            $buttonClassNames[] = $className . ' btn-primary';
+            $buttonClassNames[] = $className . ' btn-primary disabled';
+            $buttonClassNames[] = $className . ' btn-secondary';
+            $buttonClassNames[] = $className . ' btn-secondary disabled';
+
         } else {
             $buttonClassNames[] = parseLineForClassName($line);
             $buttonClassNames[] = 'disabled '.parseLineForClassName($line);
@@ -192,6 +203,18 @@ function getButtonNamesFromClassNames($classNames)
             case 'giles-button':
             case 'disabled giles-button':
                 $buttonNames[] = 'Read about OIT’s Fall 2020 Educational Technology Updates';
+                break;
+            case 'long-cta-btn btn-primary':
+            case 'long-cta-btn btn-primary disabled ':
+            case 'long-cta-btn btn-secondary':
+            case 'long-cta-btn btn-secondary disabled ':
+            $buttonNames[] = 'Long cta button';
+                break;
+            case 'btn-primary long-cta-btn-sm':
+            case 'disabled btn-primary long-cta-btn-sm':
+            case 'btn-secondary long-cta-btn-sm':
+            case 'disabled btn-secondary long-cta-btn-sm':
+            $buttonNames[] = 'small 2';
                 break;
             default:
                 $buttonNames[] = 'disabled';

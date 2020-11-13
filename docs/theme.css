@@ -140,25 +140,25 @@
   background-color: #3b8bc5; }
 
 
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-outline-primary {
   width: 10rem;
   font-size: 1rem;
   font-weight: 700;
   height: 3rem;
-  line-height: 2.9rem;
+  line-height: 2.8rem;
   padding: 0;
-  border-color: #007DCF;
+  border: 2px solid #007DCF;
   text-transform: uppercase; }
-  .btn-primary:hover, .btn-secondary:hover {
+  .btn-primary:hover, .btn-secondary:hover, .btn-outline-primary:hover {
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: #005993; }
-  .btn-primary.disabled, .btn-secondary.disabled {
+  .btn-primary.disabled, .btn-secondary.disabled, .btn-outline-primary.disabled {
     opacity: 1;
     border-color: #7FBDE6; }
-    .btn-primary.disabled:hover, .btn-secondary.disabled:hover {
+    .btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-outline-primary.disabled:hover {
       box-shadow: none;
       cursor: default; }
-    .btn-primary.disabled:focus, .btn-secondary.disabled:focus {
+    .btn-primary.disabled:focus, .btn-secondary.disabled:focus, .btn-outline-primary.disabled:focus {
       box-shadow: none; }
 
 .btn-primary {
@@ -168,13 +168,13 @@
   .btn-primary.disabled {
     background-color: #7FBDE6; }
 
-.btn-secondary {
+.btn-secondary, .btn-outline-primary {
   background-color: white;
   color: #007DCF; }
-  .btn-secondary:hover {
+  .btn-secondary:hover, .btn-outline-primary:hover {
     background-color: white;
     color: #005993; }
-  .btn-secondary.disabled {
+  .btn-secondary.disabled, .btn-outline-primary.disabled {
     background-color: white;
     color: #7FBDE6; }
 
@@ -182,14 +182,15 @@
   width: 6.875rem;
   font-size: 0.875rem;
   height: 2.375rem;
-  line-height: 2.35rem; }
+  line-height: 2.2rem; }
 
 .giles-button {
   color: #007DCF;
   background-color: #F6F8FB;
-  border-color: #007DCF;
+  border: 2px solid #007DCF;
   height: 3rem;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 2rem; }
   .giles-button:hover {
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: #005993;
@@ -204,3 +205,13 @@
       color: #7FBDE6; }
     .giles-button.disabled:focus {
       box-shadow: none; }
+
+.long-cta-btn {
+  width: 220px;
+  height: 48px; }
+
+.long-cta-btn-sm {
+  width: 170px;
+  height: 38px;
+  font-size: 0.875rem;
+  line-height: 2.2rem; }
