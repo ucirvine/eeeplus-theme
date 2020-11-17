@@ -31,7 +31,8 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
    our other tools.
 1. Commit the changes to a new branch and submit a pull request
 
-**To test changes on a branch, not a release**
+**To test changes on a branch, not a release**  
+
 If you're ever making updates to the theme package and want to test them out in a tool before you make a release, run `npm install --save ucirvine/eeeplus-theme#branch-name` in whatever tool to use the branch instead of a release
 
 ### Publishing changes
