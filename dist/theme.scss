@@ -2,7 +2,7 @@
 $uciblue: #005993;
 $royalblue: #007DCF;
 $oceanblue: #3B8BC5;
-$evergreen: #01796B;
+$cerulean: #7FBDE6;
 $ucigold: #F1C120;
 $yellow: #F5D158;
 $valencia: #EF6C01;
@@ -10,17 +10,24 @@ $olive: #5D884B;
 $red: #B81137;
 $purple: #7B1FA2;
 $sienna: #C96620;
+$evergreen: #01796B;
+$lightyellow: #FEFBF2;
+$lightpeach: #F1D9C7;
+$lightpurple: #F8F4FA;
+$snow: #F6F8FB;
+$greyblue: #F2F9FD;
+$skyblue: #E6F4FE;
+$kiwi: #E4F3DD;
+$sherbert: #FFF1E8;
+$grey: #BDBDBD;
+$lightgrey: #E0E0E0;
+$smoke: #F2F2F2;
+$chalk: #FFFFFF;
 $black: #000000;
 $darkgrey: #333333;
 $slate: #4F4F4F;
 $stone: #828282;
-$grey: #BDBDBD;
-$lightgrey: #E0E0E0;
-$smoke: #F2F2F2;
-$snow: #F6F8FB;
-$lightyellow: #FEFBF2;
 $highlightyellow: #FFFFDD;
-$lightpurple: #F8F4FA;
 
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
@@ -31,62 +38,62 @@ $classmail-blue: rgba(59, 139, 197, 1);
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: local('IBM Plex Sans Italic'), local('IBMPlexSans-Italic'), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('IBM Plex Sans Light'), local('IBMPlexSans-Light'), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('IBM Plex Sans'), local('IBMPlexSans'), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: local('IBM Plex Sans SemiBold'), local('IBMPlexSans-SemiBold'), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('IBM Plex Sans Bold'), local('IBMPlexSans-Bold'), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
 }
 
 
@@ -105,7 +112,7 @@ $font-family-base: $font-family-sans-serif;
 $uciblue: #005993;
 $royalblue: #007DCF;
 $oceanblue: #3B8BC5;
-$evergreen: #01796B;
+$cerulean: #7FBDE6;
 $ucigold: #F1C120;
 $yellow: #F5D158;
 $valencia: #EF6C01;
@@ -113,17 +120,24 @@ $olive: #5D884B;
 $red: #B81137;
 $purple: #7B1FA2;
 $sienna: #C96620;
+$evergreen: #01796B;
+$lightyellow: #FEFBF2;
+$lightpeach: #F1D9C7;
+$lightpurple: #F8F4FA;
+$snow: #F6F8FB;
+$greyblue: #F2F9FD;
+$skyblue: #E6F4FE;
+$kiwi: #E4F3DD;
+$sherbert: #FFF1E8;
+$grey: #BDBDBD;
+$lightgrey: #E0E0E0;
+$smoke: #F2F2F2;
+$chalk: #FFFFFF;
 $black: #000000;
 $darkgrey: #333333;
 $slate: #4F4F4F;
 $stone: #828282;
-$grey: #BDBDBD;
-$lightgrey: #E0E0E0;
-$smoke: #F2F2F2;
-$snow: #F6F8FB;
-$lightyellow: #FEFBF2;
 $highlightyellow: #FFFFDD;
-$lightpurple: #F8F4FA;
 
  /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
@@ -134,7 +148,7 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-uciblue { background-color: $uciblue; }
 .bg-royalblue { background-color: $royalblue; }
 .bg-oceanblue { background-color: $oceanblue; }
-.bg-evergreen { background-color: $evergreen; }
+.bg-cerulean { background-color: $cerulean; }
 .bg-ucigold { background-color: $ucigold; }
 .bg-yellow { background-color: $yellow; }
 .bg-valencia { background-color: $valencia; }
@@ -142,17 +156,24 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-red { background-color: $red; }
 .bg-purple { background-color: $purple; }
 .bg-sienna { background-color: $sienna; }
+.bg-evergreen { background-color: $evergreen; }
+.bg-lightyellow { background-color: $lightyellow; }
+.bg-lightpeach { background-color: $lightpeach; }
+.bg-lightpurple { background-color: $lightpurple; }
+.bg-snow { background-color: $snow; }
+.bg-greyblue { background-color: $greyblue; }
+.bg-skyblue { background-color: $skyblue; }
+.bg-kiwi { background-color: $kiwi; }
+.bg-sherbert { background-color: $sherbert; }
+.bg-grey { background-color: $grey; }
+.bg-lightgrey { background-color: $lightgrey; }
+.bg-smoke { background-color: $smoke; }
+.bg-chalk { background-color: $chalk; }
 .bg-black { background-color: $black; }
 .bg-darkgrey { background-color: $darkgrey; }
 .bg-slate { background-color: $slate; }
 .bg-stone { background-color: $stone; }
-.bg-grey { background-color: $grey; }
-.bg-lightgrey { background-color: $lightgrey; }
-.bg-smoke { background-color: $smoke; }
-.bg-snow { background-color: $snow; }
-.bg-lightyellow { background-color: $lightyellow; }
 .bg-highlightyellow { background-color: $highlightyellow; }
-.bg-lightpurple { background-color: $lightpurple; }
 .bg-assistants-blue { background-color: $assistants-blue; }
 .bg-classmail-blue { background-color: $classmail-blue; }
 }

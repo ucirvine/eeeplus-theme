@@ -5,61 +5,61 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local("Lato Italic"), local("Lato-Italic"), url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local("Lato Light"), local("Lato-Light"), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local("Lato Regular"), local("Lato-Regular"), url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local("Lato Bold"), local("Lato-Bold"), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local("Lato Black"), local("Lato-Black"), url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: local("IBM Plex Sans Italic"), local("IBMPlexSans-Italic"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: local("IBM Plex Sans Light"), local("IBMPlexSans-Light"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: local("IBM Plex Sans"), local("IBMPlexSans"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: local("IBM Plex Sans SemiBold"), local("IBMPlexSans-SemiBold"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: local("IBM Plex Sans Bold"), local("IBMPlexSans-Bold"), url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
 
 
 
@@ -73,8 +73,8 @@
 #eeeplus-theme-demo .bg-oceanblue {
   background-color: #3B8BC5; }
 
-#eeeplus-theme-demo .bg-evergreen {
-  background-color: #01796B; }
+#eeeplus-theme-demo .bg-cerulean {
+  background-color: #7FBDE6; }
 
 #eeeplus-theme-demo .bg-ucigold {
   background-color: #F1C120; }
@@ -97,6 +97,45 @@
 #eeeplus-theme-demo .bg-sienna {
   background-color: #C96620; }
 
+#eeeplus-theme-demo .bg-evergreen {
+  background-color: #01796B; }
+
+#eeeplus-theme-demo .bg-lightyellow {
+  background-color: #FEFBF2; }
+
+#eeeplus-theme-demo .bg-lightpeach {
+  background-color: #F1D9C7; }
+
+#eeeplus-theme-demo .bg-lightpurple {
+  background-color: #F8F4FA; }
+
+#eeeplus-theme-demo .bg-snow {
+  background-color: #F6F8FB; }
+
+#eeeplus-theme-demo .bg-greyblue {
+  background-color: #F2F9FD; }
+
+#eeeplus-theme-demo .bg-skyblue {
+  background-color: #E6F4FE; }
+
+#eeeplus-theme-demo .bg-kiwi {
+  background-color: #E4F3DD; }
+
+#eeeplus-theme-demo .bg-sherbert {
+  background-color: #FFF1E8; }
+
+#eeeplus-theme-demo .bg-grey {
+  background-color: #BDBDBD; }
+
+#eeeplus-theme-demo .bg-lightgrey {
+  background-color: #E0E0E0; }
+
+#eeeplus-theme-demo .bg-smoke {
+  background-color: #F2F2F2; }
+
+#eeeplus-theme-demo .bg-chalk {
+  background-color: #FFFFFF; }
+
 #eeeplus-theme-demo .bg-black {
   background-color: #000000; }
 
@@ -109,26 +148,8 @@
 #eeeplus-theme-demo .bg-stone {
   background-color: #828282; }
 
-#eeeplus-theme-demo .bg-grey {
-  background-color: #BDBDBD; }
-
-#eeeplus-theme-demo .bg-lightgrey {
-  background-color: #E0E0E0; }
-
-#eeeplus-theme-demo .bg-smoke {
-  background-color: #F2F2F2; }
-
-#eeeplus-theme-demo .bg-snow {
-  background-color: #F6F8FB; }
-
-#eeeplus-theme-demo .bg-lightyellow {
-  background-color: #FEFBF2; }
-
 #eeeplus-theme-demo .bg-highlightyellow {
   background-color: #FFFFDD; }
-
-#eeeplus-theme-demo .bg-lightpurple {
-  background-color: #F8F4FA; }
 
 #eeeplus-theme-demo .bg-assistants-blue {
   background-color: #3b8bc5; }
