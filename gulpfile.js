@@ -17,7 +17,8 @@ function mergeSass(done) {
       'src/colors.scss',
       'src/tool-colors.scss',
       'src/typography.scss',
-      'src/demo.scss'
+      'src/demo.scss',
+      'src/buttons.scss'
     ])
     .pipe(concat('theme.scss'))
     .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
