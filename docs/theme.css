@@ -61,6 +61,167 @@
   font-weight: 700;
   src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
 
+.bg-blue-light {
+  background-color: #F2F2F2 !important; }
+
+.bg-blue-darker {
+  background-color: #005993 !important; }
+
+.bg-orange-light {
+  background-color: #F6F8FB !important; }
+
+.font-color-gray-smedium {
+  color: #828282 !important; }
+
+.font-weight-900 {
+  font-weight: 900; }
+
+.font-weight-600 {
+  font-weight: 600; }
+
+.font-size-12 {
+  font-size: 12px; }
+
+.font-size-12-mobile-10 {
+  font-size: 12px; }
+  @media (max-width: 420px) {
+    .font-size-12-mobile-10 {
+      font-size: 10px; } }
+
+.font-size-16-mobile-12 {
+  font-size: 16px; }
+  @media (max-width: 420px) {
+    .font-size-16-mobile-12 {
+      font-size: 12px; } }
+
+.font-size-14 {
+  font-size: 0.875rem; }
+
+.font-size-16 {
+  font-size: 1rem; }
+
+.font-size-24 {
+  font-size: 1.5rem; }
+
+.color-sienna {
+  color: #C96620; }
+
+.color-stone {
+  color: #828282; }
+
+.color-lightpeach {
+  color: #F1D9C7; }
+
+.color-pinkred {
+  color: #F8E7EB; }
+
+.color-royalblue {
+  color: #007DCF; }
+
+.color-skyblue {
+  color: #E6F4FE; }
+
+.color-lightgrey {
+  color: #E0E0E0; }
+
+.dark-blue-border-top {
+  border-top: 1rem solid #005993; }
+
+.light-blue-border-top {
+  border-top: 1rem solid #3B8BC5; }
+
+.purple-border-top {
+  border-top: 1rem solid #7B1FA2; }
+
+.green-border-top {
+  border-top: 1rem solid #01796B; }
+
+.gray-border-top {
+  border-top: 1rem solid #828282; }
+
+.bg-lightyellow {
+  background-color: #FEFBF2; }
+
+#custom-error-page-container .big-error-icon {
+  font-size: 12rem; }
+
+
+.btn-primary, .btn-secondary, .btn-outline-primary {
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3rem;
+  line-height: 2.8rem;
+  padding: 0;
+  border: 2px solid #007DCF;
+  text-transform: uppercase; }
+  .btn-primary:hover, .btn-secondary:hover, .btn-outline-primary:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: #005993; }
+  .btn-primary.disabled, .btn-secondary.disabled, .btn-outline-primary.disabled {
+    opacity: 1;
+    border-color: #7FBDE6; }
+    .btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-outline-primary.disabled:hover {
+      box-shadow: none;
+      cursor: default; }
+    .btn-primary.disabled:focus, .btn-secondary.disabled:focus, .btn-outline-primary.disabled:focus {
+      box-shadow: none; }
+
+.btn-primary {
+  background-color: #007DCF; }
+  .btn-primary:hover {
+    background-color: #005993; }
+  .btn-primary.disabled {
+    background-color: #7FBDE6; }
+
+.btn-secondary, .btn-outline-primary {
+  background-color: white;
+  color: #007DCF; }
+  .btn-secondary:hover, .btn-outline-primary:hover {
+    background-color: white;
+    color: #005993; }
+  .btn-secondary.disabled, .btn-outline-primary.disabled {
+    background-color: white;
+    color: #7FBDE6; }
+
+.btn-sm {
+  width: 6.875rem;
+  font-size: 0.875rem;
+  height: 2.375rem;
+  line-height: 2.2rem; }
+
+.giles-button {
+  color: #007DCF;
+  background-color: #F6F8FB;
+  border: 2px solid #007DCF;
+  height: 3rem;
+  font-weight: bold;
+  line-height: 2rem; }
+  .giles-button:hover {
+    box-shadow: 0 3px 3px 1px #aaa;
+    border-color: #005993;
+    color: #005993; }
+  .giles-button.disabled {
+    opacity: 1;
+    border-color: #7FBDE6;
+    color: #7FBDE6; }
+    .giles-button.disabled:hover {
+      box-shadow: none;
+      cursor: default;
+      color: #7FBDE6; }
+    .giles-button.disabled:focus {
+      box-shadow: none; }
+
+.long-cta-btn {
+  width: 220px;
+  height: 48px; }
+
+.long-cta-btn-sm {
+  width: 170px;
+  height: 38px;
+  font-size: 0.875rem;
+  line-height: 2.2rem; }
+
 
 
 
@@ -154,85 +315,20 @@
 #eeeplus-theme-demo .bg-highlightyellow {
   background-color: #FFFFDD; }
 
+#eeeplus-theme-demo .bg-lightpurple {
+  background-color: #F8F4FA; }
+
+#eeeplus-theme-demo .bg-pinkred {
+  background-color: #F8E7EB; }
+
+#eeeplus-theme-demo .bg-lightpeach {
+  background-color: #F1D9C7; }
+
+#eeeplus-theme-demo .bg-skyblue {
+  background-color: #E6F4FE; }
+
 #eeeplus-theme-demo .bg-assistants-blue {
   background-color: #3b8bc5; }
 
 #eeeplus-theme-demo .bg-classmail-blue {
   background-color: #3b8bc5; }
-
-
-.btn-primary, .btn-secondary, .btn-outline-primary {
-  width: 10rem;
-  font-size: 1rem;
-  font-weight: 700;
-  height: 3rem;
-  line-height: 2.8rem;
-  padding: 0;
-  border: 2px solid #007DCF;
-  text-transform: uppercase; }
-  .btn-primary:hover, .btn-secondary:hover, .btn-outline-primary:hover {
-    box-shadow: 0 3px 3px 1px #aaa;
-    border-color: #005993; }
-  .btn-primary.disabled, .btn-secondary.disabled, .btn-outline-primary.disabled {
-    opacity: 1;
-    border-color: #7FBDE6; }
-    .btn-primary.disabled:hover, .btn-secondary.disabled:hover, .btn-outline-primary.disabled:hover {
-      box-shadow: none;
-      cursor: default; }
-    .btn-primary.disabled:focus, .btn-secondary.disabled:focus, .btn-outline-primary.disabled:focus {
-      box-shadow: none; }
-
-.btn-primary {
-  background-color: #007DCF; }
-  .btn-primary:hover {
-    background-color: #005993; }
-  .btn-primary.disabled {
-    background-color: #7FBDE6; }
-
-.btn-secondary, .btn-outline-primary {
-  background-color: white;
-  color: #007DCF; }
-  .btn-secondary:hover, .btn-outline-primary:hover {
-    background-color: white;
-    color: #005993; }
-  .btn-secondary.disabled, .btn-outline-primary.disabled {
-    background-color: white;
-    color: #7FBDE6; }
-
-.btn-sm {
-  width: 6.875rem;
-  font-size: 0.875rem;
-  height: 2.375rem;
-  line-height: 2.2rem; }
-
-.giles-button {
-  color: #007DCF;
-  background-color: #F6F8FB;
-  border: 2px solid #007DCF;
-  height: 3rem;
-  font-weight: bold;
-  line-height: 2rem; }
-  .giles-button:hover {
-    box-shadow: 0 3px 3px 1px #aaa;
-    border-color: #005993;
-    color: #005993; }
-  .giles-button.disabled {
-    opacity: 1;
-    border-color: #7FBDE6;
-    color: #7FBDE6; }
-    .giles-button.disabled:hover {
-      box-shadow: none;
-      cursor: default;
-      color: #7FBDE6; }
-    .giles-button.disabled:focus {
-      box-shadow: none; }
-
-.long-cta-btn {
-  width: 220px;
-  height: 48px; }
-
-.long-cta-btn-sm {
-  width: 170px;
-  height: 38px;
-  font-size: 0.875rem;
-  line-height: 2.2rem; }

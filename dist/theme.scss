@@ -29,6 +29,10 @@ $darkgrey: #333333;
 $slate: #4F4F4F;
 $stone: #828282;
 $highlightyellow: #FFFFDD;
+$lightpurple: #F8F4FA;
+$pinkred: #F8E7EB;
+$lightpeach: #F1D9C7;
+$skyblue: #E6F4FE;
 
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
@@ -105,80 +109,116 @@ $font-family-sans-serif: "Lato";
 $headings-font-family: "IBM Plex Sans";
 $font-family-base: $font-family-sans-serif;
 
-/* This is for the demo docs, don't really need to change much stuff here
- * unless adding new elements
- */
+// Background colors
+.bg-blue-light {
+  background-color: $smoke !important;
+}
 
- /* Put color variables in here */
-$uciblue: #005993;
-$royalblue: #007DCF;
-$oceanblue: #3B8BC5;
-$cerulean: #7FBDE6;
-$evergreen: #01796B;
-$ucigold: #F1C120;
-$yellow: #F5D158;
-$valencia: #EF6C01;
-$olive: #5D884B;
-$red: #B81137;
-$purple: #7B1FA2;
-$sienna: #C96620;
-$evergreen: #01796B;
-$lightyellow: #FEFBF2;
-$lightpeach: #F1D9C7;
-$lightpurple: #F8F4FA;
-$snow: #F6F8FB;
-$greyblue: #F2F9FD;
-$skyblue: #E6F4FE;
-$kiwi: #E4F3DD;
-$sherbert: #FFF1E8;
-$grey: #BDBDBD;
-$lightgrey: #E0E0E0;
-$smoke: #F2F2F2;
-$chalk: #FFFFFF;
-$black: #000000;
-$darkgrey: #333333;
-$slate: #4F4F4F;
-$stone: #828282;
-$highlightyellow: #FFFFDD;
+.bg-blue-darker {
+  background-color: $uciblue !important;
+}
 
- /* Tool specific colors */
-$assistants-blue: rgba(59, 139, 197, 1);
-$classmail-blue: rgba(59, 139, 197, 1);
+.bg-orange-light {
+  background-color: $snow !important;
+}
 
+.font-color-gray-smedium {
+  color: $stone !important;
+}
 
- #eeeplus-theme-demo {
-.bg-uciblue { background-color: $uciblue; }
-.bg-royalblue { background-color: $royalblue; }
-.bg-oceanblue { background-color: $oceanblue; }
-.bg-cerulean { background-color: $cerulean; }
-.bg-evergreen { background-color: $evergreen; }
-.bg-ucigold { background-color: $ucigold; }
-.bg-yellow { background-color: $yellow; }
-.bg-valencia { background-color: $valencia; }
-.bg-olive { background-color: $olive; }
-.bg-red { background-color: $red; }
-.bg-purple { background-color: $purple; }
-.bg-sienna { background-color: $sienna; }
-.bg-evergreen { background-color: $evergreen; }
-.bg-lightyellow { background-color: $lightyellow; }
-.bg-lightpeach { background-color: $lightpeach; }
-.bg-lightpurple { background-color: $lightpurple; }
-.bg-snow { background-color: $snow; }
-.bg-greyblue { background-color: $greyblue; }
-.bg-skyblue { background-color: $skyblue; }
-.bg-kiwi { background-color: $kiwi; }
-.bg-sherbert { background-color: $sherbert; }
-.bg-grey { background-color: $grey; }
-.bg-lightgrey { background-color: $lightgrey; }
-.bg-smoke { background-color: $smoke; }
-.bg-chalk { background-color: $chalk; }
-.bg-black { background-color: $black; }
-.bg-darkgrey { background-color: $darkgrey; }
-.bg-slate { background-color: $slate; }
-.bg-stone { background-color: $stone; }
-.bg-highlightyellow { background-color: $highlightyellow; }
-.bg-assistants-blue { background-color: $assistants-blue; }
-.bg-classmail-blue { background-color: $classmail-blue; }
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-12-mobile-10 {
+  font-size: 12px;
+  @media (max-width: 420px) {
+    font-size: 10px;
+  }
+}
+
+.font-size-16-mobile-12 {
+  font-size: 16px;
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
+}
+
+.font-size-14 {
+  font-size: 0.875rem;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-size-24 {
+  font-size: 1.5rem;
+}
+
+.color-sienna {
+  color: $sienna;
+}
+
+.color-stone {
+  color: $stone;
+}
+
+.color-lightpeach {
+  color: $lightpeach
+}
+
+.color-pinkred {
+  color: $pinkred;
+}
+
+.color-royalblue {
+  color: $royalblue;
+}
+
+.color-skyblue {
+  color: $skyblue;
+}
+
+.color-lightgrey {
+  color: $lightgrey;
+}
+
+.dark-blue-border-top {
+  border-top: 1rem solid $uciblue;
+}
+
+.light-blue-border-top {
+  border-top: 1rem solid $oceanblue;
+}
+
+.purple-border-top {
+  border-top: 1rem solid $purple;
+}
+
+.green-border-top {
+  border-top: 1rem solid $evergreen;
+}
+
+.gray-border-top {
+  border-top: 1rem solid $stone;
+}
+
+.bg-lightyellow {
+  background-color: $lightyellow;
+}
+#custom-error-page-container {
+  .big-error-icon {
+    font-size: 12rem;
+  }
 }
 
 /* Put button things in here */
@@ -276,4 +316,88 @@ $classmail-blue: rgba(59, 139, 197, 1);
   height: 38px;
   font-size: 0.875rem;
   line-height: 2.2rem;
+}
+
+/* This is for the demo docs, don't really need to change much stuff here
+ * unless adding new elements
+ */
+
+ /* Put color variables in here */
+$uciblue: #005993;
+$royalblue: #007DCF;
+$oceanblue: #3B8BC5;
+$cerulean: #7FBDE6;
+$evergreen: #01796B;
+$ucigold: #F1C120;
+$yellow: #F5D158;
+$valencia: #EF6C01;
+$olive: #5D884B;
+$red: #B81137;
+$purple: #7B1FA2;
+$sienna: #C96620;
+$evergreen: #01796B;
+$lightyellow: #FEFBF2;
+$lightpeach: #F1D9C7;
+$lightpurple: #F8F4FA;
+$snow: #F6F8FB;
+$greyblue: #F2F9FD;
+$skyblue: #E6F4FE;
+$kiwi: #E4F3DD;
+$sherbert: #FFF1E8;
+$grey: #BDBDBD;
+$lightgrey: #E0E0E0;
+$smoke: #F2F2F2;
+$chalk: #FFFFFF;
+$black: #000000;
+$darkgrey: #333333;
+$slate: #4F4F4F;
+$stone: #828282;
+$highlightyellow: #FFFFDD;
+$lightpurple: #F8F4FA;
+$pinkred: #F8E7EB;
+$lightpeach: #F1D9C7;
+$skyblue: #E6F4FE;
+
+ /* Tool specific colors */
+$assistants-blue: rgba(59, 139, 197, 1);
+$classmail-blue: rgba(59, 139, 197, 1);
+
+
+ #eeeplus-theme-demo {
+.bg-uciblue { background-color: $uciblue; }
+.bg-royalblue { background-color: $royalblue; }
+.bg-oceanblue { background-color: $oceanblue; }
+.bg-cerulean { background-color: $cerulean; }
+.bg-evergreen { background-color: $evergreen; }
+.bg-ucigold { background-color: $ucigold; }
+.bg-yellow { background-color: $yellow; }
+.bg-valencia { background-color: $valencia; }
+.bg-olive { background-color: $olive; }
+.bg-red { background-color: $red; }
+.bg-purple { background-color: $purple; }
+.bg-sienna { background-color: $sienna; }
+.bg-evergreen { background-color: $evergreen; }
+.bg-lightyellow { background-color: $lightyellow; }
+.bg-lightpeach { background-color: $lightpeach; }
+.bg-lightpurple { background-color: $lightpurple; }
+.bg-snow { background-color: $snow; }
+.bg-greyblue { background-color: $greyblue; }
+.bg-skyblue { background-color: $skyblue; }
+.bg-kiwi { background-color: $kiwi; }
+.bg-sherbert { background-color: $sherbert; }
+.bg-grey { background-color: $grey; }
+.bg-lightgrey { background-color: $lightgrey; }
+.bg-smoke { background-color: $smoke; }
+.bg-chalk { background-color: $chalk; }
+.bg-black { background-color: $black; }
+.bg-darkgrey { background-color: $darkgrey; }
+.bg-slate { background-color: $slate; }
+.bg-stone { background-color: $stone; }
+.bg-highlightyellow { background-color: $highlightyellow; }
+.bg-lightpurple { background-color: $lightpurple; }
+.bg-pinkred { background-color: $pinkred; }
+.bg-lightpeach { background-color: $lightpeach; }
+.bg-skyblue { background-color: $skyblue; }
+.bg-assistants-blue { background-color: $assistants-blue; }
+.bg-classmail-blue { background-color: $classmail-blue; }
 }

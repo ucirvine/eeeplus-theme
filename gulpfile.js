@@ -12,18 +12,20 @@ const cssimport = require('gulp-cssimport');
  * This merges all the SCSS in src into theme.scss
  */
 function mergeSass(done) {
-  return gulp.src(
-    [
-      'src/colors.scss',
-      'src/tool-colors.scss',
-      'src/typography.scss',
-      'src/demo.scss',
-      'src/buttons.scss'
-    ])
-    .pipe(concat('theme.scss'))
-    .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
-    .pipe(sassCombine())
-    .pipe(gulp.dest('./dist/'))
+    return gulp.src(
+        [
+            'src/colors.scss',
+            'src/tool-colors.scss',
+            'src/typography.scss',
+            'src/shortcuts.scss',
+            'src/custom-error-pages.scss',
+            'src/buttons.scss',
+            'src/demo.scss'
+        ])
+        .pipe(concat('theme.scss'))
+        .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
+        .pipe(sassCombine())
+        .pipe(gulp.dest('./dist/'))
     ;
 }
 
@@ -31,19 +33,19 @@ function mergeSass(done) {
  * This takes theme.scss and generates a CSS file to be used in the docs (or if you want to include it)
  */
 function generateCss(done) {
-  return gulp.src('dist/theme.scss')
-    .pipe(sass())
-    .pipe(stripCssComments())
-    .pipe(gulp.dest('./docs/'))
-    ;
+    return gulp.src('dist/theme.scss')
+        .pipe(sass())
+        .pipe(stripCssComments())
+        .pipe(gulp.dest('./docs/'))
+        ;
 }
 
 gulp.task('merge', mergeSass);
 gulp.task('generate', generateCss);
 
 gulp.task('default',
-  gulp.series('merge', 'generate', function (done) {
-    done();
-  })
+    gulp.series('merge', 'generate', function (done) {
+        done();
+    })
 );
 

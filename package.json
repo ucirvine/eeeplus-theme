@@ -20,7 +20,9 @@
   "description": "EEE+ Theme",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-cssimport": "^7.0.0"
+    "gulp-cssimport": "^7.0.0",
+    "node-sass": "^4.14.1",
+    "sass": "^1.32.13"
   },
   "repository": {
     "type": "git",
