@@ -1,0 +1,102 @@
+// Background colors
+.bg-blue-light {
+  background-color: $smoke !important;
+}
+
+.bg-blue-darker {
+  background-color: $uciblue !important;
+}
+
+.bg-orange-light {
+  background-color: $snow !important;
+}
+
+.font-color-gray-smedium {
+  color: $stone !important;
+}
+
+.font-weight-900 {
+  font-weight: 900;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-12-mobile-10 {
+  font-size: 12px;
+  @media (max-width: 420px) {
+    font-size: 10px;
+  }
+}
+
+.font-size-16-mobile-12 {
+  font-size: 16px;
+  @media (max-width: 420px) {
+    font-size: 12px;
+  }
+}
+
+.font-size-14 {
+  font-size: 0.875rem;
+}
+
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-size-24 {
+  font-size: 1.5rem;
+}
+
+.color-sienna {
+  color: $sienna;
+}
+
+.color-stone {
+  color: $stone;
+}
+
+.color-lightpeach {
+  color: $lightpeach
+}
+
+.color-pinkred {
+  color: $pinkred;
+}
+
+.color-royalblue {
+  color: $royalblue;
+}
+
+.color-skyblue {
+  color: $skyblue;
+}
+
+.dark-blue-border-top {
+  border-top: 1rem solid $uciblue;
+}
+
+.light-blue-border-top {
+  border-top: 1rem solid $oceanblue;
+}
+
+.purple-border-top {
+  border-top: 1rem solid $purple;
+}
+
+.green-border-top {
+  border-top: 1rem solid $evergreen;
+}
+
+.gray-border-top {
+  border-top: 1rem solid $stone;
+}
+
+.bg-lightyellow {
+  background-color: $lightyellow;
+}

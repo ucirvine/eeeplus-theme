@@ -17,8 +17,8 @@ function mergeSass(done) {
       'src/colors.scss',
       'src/tool-colors.scss',
       'src/typography.scss',
-      'src/demo.scss',
-      'src/buttons.scss'
+      'src/shortcuts.scss',
+      'src/custom-error-pages.scss'
     ])
     .pipe(concat('theme.scss'))
     .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
@@ -31,19 +31,19 @@ function mergeSass(done) {
  * This takes theme.scss and generates a CSS file to be used in the docs (or if you want to include it)
  */
 function generateCss(done) {
-  return gulp.src('dist/theme.scss')
-    .pipe(sass())
-    .pipe(stripCssComments())
-    .pipe(gulp.dest('./docs/'))
-    ;
+    return gulp.src('dist/theme.scss')
+        .pipe(sass())
+        .pipe(stripCssComments())
+        .pipe(gulp.dest('./docs/'))
+        ;
 }
 
 gulp.task('merge', mergeSass);
 gulp.task('generate', generateCss);
 
 gulp.task('default',
-  gulp.series('merge', 'generate', function (done) {
-    done();
-  })
+    gulp.series('merge', 'generate', function (done) {
+        done();
+    })
 );
 
