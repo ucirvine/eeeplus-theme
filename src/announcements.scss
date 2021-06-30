@@ -1,0 +1,76 @@
+#announcements-container {
+  .announcement {
+    background-color: white;
+    border: 1px solid $uciblue;
+
+    .header {
+      color: $uciblue;
+    }
+
+    .content {
+      .icon {
+        width: 1.25rem;
+
+        &.warning-announcement {
+          color: $sienna;
+        }
+
+        &.urgent-announcement {
+          color: $red;
+        }
+
+        &.partner-announcement {
+          color: $purple;
+        }
+
+        &.info-announcement {
+          color: $uciblue;
+        }
+      }
+
+      p {
+        display: inline;
+      }
+    }
+
+    &.warning-announcement {
+      border: 1px solid $sienna;
+
+      .header {
+        color: $sienna;
+      }
+    }
+
+    &.urgent-announcement {
+      border: 1px solid $red;
+
+      .header {
+        color: $red;
+      }
+    }
+
+    &.partner-announcement {
+      border: 1px solid $purple;
+
+      .header {
+        color: $purple;
+      }
+    }
+
+    &.info-announcement {
+      border: 1px solid $uciblue;
+
+      .header {
+        color: $uciblue;
+      }
+    }
+
+    &.multiple {
+      border: 1px solid $stone;
+
+      .header {
+        color: $stone;
+      }
+    }
+  }
+}
