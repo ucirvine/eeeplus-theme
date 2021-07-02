@@ -19,6 +19,7 @@ function mergeSass(done) {
             'src/typography.scss',
             'src/shortcuts.scss',
             'src/custom-error-pages.scss',
+            'src/announcements.scss',
             'src/buttons.scss',
             'src/demo.scss'
         ])
