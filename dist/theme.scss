@@ -235,9 +235,12 @@ $font-family-base: $font-family-sans-serif;
     }
 
     .content {
-      .icon {
+      span {
         width: 1.25rem;
+        display: inline-block;
+      }
 
+      .icon {
         &.warning-announcement {
           color: $sienna;
         }
