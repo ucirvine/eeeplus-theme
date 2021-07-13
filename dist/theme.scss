@@ -320,7 +320,7 @@ $font-family-base: $font-family-sans-serif;
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: $uciblue;
   }
-  &.disabled {
+  &:disabled {
     opacity: 1;  // This overrides the default opacity since we don't want any transparency
     border-color: $cerulean;
     &:hover {
@@ -338,7 +338,7 @@ $font-family-base: $font-family-sans-serif;
   &:hover {
     background-color: $uciblue;
   }
-  &.disabled {
+  &:disabled {
     background-color: $cerulean;
   }
 }
@@ -350,7 +350,7 @@ $font-family-base: $font-family-sans-serif;
     background-color: white;
     color: $uciblue;
   }
-  &.disabled {
+  &:disabled {
     background-color: white;
     color: $cerulean;
   }
@@ -375,7 +375,7 @@ $font-family-base: $font-family-sans-serif;
     border-color: $uciblue;
     color: $uciblue;
   }
-  &.disabled {
+  &:disabled {
     opacity: 1;  // This overrides the default opacity since we don't want any transparency
     border-color: $cerulean;
     color: $cerulean;
