@@ -21,7 +21,8 @@ function mergeSass(done) {
             'src/custom-error-pages.scss',
             'src/announcements.scss',
             'src/buttons.scss',
-            'src/demo.scss'
+            'src/demo.scss',
+            'src/messages.scss'
         ])
         .pipe(concat('theme.scss'))
         .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss

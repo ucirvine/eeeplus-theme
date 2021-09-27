@@ -5,61 +5,61 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
 
 .bg-blue-light {
   background-color: #F2F2F2 !important; }
@@ -369,8 +369,49 @@
 #eeeplus-theme-demo .bg-skyblue {
   background-color: #E6F4FE; }
 
+#eeeplus-theme-demo .bg-lightgreen {
+  background-color: #EAFBEB; }
+
 #eeeplus-theme-demo .bg-assistants-blue {
   background-color: #3b8bc5; }
 
 #eeeplus-theme-demo .bg-classmail-blue {
   background-color: #3b8bc5; }
+
+.message {
+  box-sizing: border-box;
+  border-radius: .25rem;
+  font-size: .813rem;
+  padding-top: .813rem;
+  padding-left: .938rem;
+  padding-bottom: 1.875rem;
+  display: grid;
+  grid-template-columns: 1% 96%;
+  grid-gap: 1.25rem;
+  height: 100%; }
+  .message .message-icon {
+    margin-top: .1rem; }
+  .message.positive-message {
+    border: 1px solid #01796B;
+    background: #EAFBEB;
+    color: #01796B; }
+    .message.positive-message .icon {
+      color: #01796B; }
+  .message.alert-message {
+    border: 1px solid #C96620;
+    background: #FAF0E9;
+    color: #C96620; }
+    .message.alert-message .icon {
+      color: #C96620; }
+  .message.warning-message {
+    border: 1px solid #B81137;
+    background: rgba(184, 17, 55, 0.1);
+    color: #B81137; }
+    .message.warning-message .icon {
+      color: #B81137; }
+  .message.info-message {
+    border: 1px solid #007DCF;
+    background: rgba(0, 125, 207, 0.1);
+    color: #007DCF; }
+    .message.info-message .icon {
+      color: #007DCF; }

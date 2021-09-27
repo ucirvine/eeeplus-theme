@@ -1,0 +1,56 @@
+.message {
+    box-sizing: border-box;
+    border-radius: .25rem;
+    font-size: .813rem;
+    padding-top: .813rem;
+    padding-left: .938rem;
+    padding-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: 1% 96%;
+    grid-gap: 1.25rem;
+    height: 100%;
+
+    .message-icon {
+        margin-top: .1rem;
+    }
+
+    &.positive-message {
+        border: 1px solid $evergreen;
+        background: $lightgreen;
+        color: $evergreen;
+
+        .icon {
+            color: $evergreen;
+        }
+    }
+
+    &.alert-message {
+        border: 1px solid $sienna;
+        background: #FAF0E9; // color does not exist in style guide
+        color: $sienna;
+
+        .icon {
+            color: $sienna;
+        }
+    }
+
+    &.warning-message {
+        border: 1px solid $red;
+        background: rgba(184, 17, 55, 0.1); // color in design given in rgba
+        color: $red;
+
+        .icon {
+            color: $red;
+        }
+    }
+
+    &.info-message {
+        border: 1px solid $royalblue;
+        background: rgba(0, 125, 207, 0.1); // color in design given in rbga
+        color: $royalblue;
+
+        .icon {
+            color: $royalblue;
+        }
+    }
+}
