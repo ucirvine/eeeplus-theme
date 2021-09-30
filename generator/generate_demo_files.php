@@ -224,6 +224,16 @@ function getButtonNamesFromClassNames($classNames)
     return $buttonNames;
 }
 
+function getMessageClassNames()
+{
+    return [
+        'message positive-message mb-2',
+        'message alert-message mb-2',
+        'message warning-message mb-2',
+        'message info-message mb-2',
+    ];
+}
+
 /*
  * First generate the demo SCSS file to use in the index file
  */
@@ -245,6 +255,7 @@ $colorVariables = getBackgroundColorVariableNamesFromSourceForColors();
 $toolColorVariables = getBackgroundColorVariableNamesFromSourceForToolColors();
 $buttonClassNames = getButtonClassNamesFromSourceForButtons();
 $buttonNames = getButtonNamesFromClassNames($buttonClassNames);
+$messageClassNames = getMessageClassNames();
 
 $scssLines = array_merge($scssLines, generateDemoScssBackgroundColors(
     array_merge(

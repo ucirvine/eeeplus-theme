@@ -99,6 +99,14 @@
     ?>
     </div>
 
+    <?php
+    foreach ($messageClassNames as $className) {
+    ?>
+        <div class="<?php echo $className; ?>">Message</div>
+    <?php
+    }
+    ?>
+
 
 </main>
 

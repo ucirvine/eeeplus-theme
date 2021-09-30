@@ -33,6 +33,7 @@ $lightpurple: #F8F4FA;
 $pinkred: #F8E7EB;
 $lightpeach: #F1D9C7;
 $skyblue: #E6F4FE;
+$lightgreen: #EAFBEB;
 
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
@@ -43,62 +44,62 @@ $classmail-blue: rgba(59, 139, 197, 1);
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v17/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v8/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
 }
 
 
@@ -441,6 +442,7 @@ $lightpurple: #F8F4FA;
 $pinkred: #F8E7EB;
 $lightpeach: #F1D9C7;
 $skyblue: #E6F4FE;
+$lightgreen: #EAFBEB;
 
  /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
@@ -482,6 +484,64 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-pinkred { background-color: $pinkred; }
 .bg-lightpeach { background-color: $lightpeach; }
 .bg-skyblue { background-color: $skyblue; }
+.bg-lightgreen { background-color: $lightgreen; }
 .bg-assistants-blue { background-color: $assistants-blue; }
 .bg-classmail-blue { background-color: $classmail-blue; }
+}
+
+.message {
+    box-sizing: border-box;
+    border-radius: .25rem;
+    font-size: .813rem;
+    padding-top: .813rem;
+    padding-left: .938rem;
+    padding-bottom: 1.875rem;
+    display: grid;
+    grid-template-columns: 1% 96%;
+    grid-gap: 1.25rem;
+    height: 100%;
+
+    .message-icon {
+        margin-top: .1rem;
+    }
+
+    &.positive-message {
+        border: 1px solid $evergreen;
+        background: $lightgreen;
+        color: $evergreen;
+
+        .icon {
+            color: $evergreen;
+        }
+    }
+
+    &.alert-message {
+        border: 1px solid $sienna;
+        background: #FAF0E9; // color does not exist in style guide
+        color: $sienna;
+
+        .icon {
+            color: $sienna;
+        }
+    }
+
+    &.warning-message {
+        border: 1px solid $red;
+        background: rgba(184, 17, 55, 0.1); // color in design given in rgba
+        color: $red;
+
+        .icon {
+            color: $red;
+        }
+    }
+
+    &.info-message {
+        border: 1px solid $royalblue;
+        background: rgba(0, 125, 207, 0.1); // color in design given in rbga
+        color: $royalblue;
+
+        .icon {
+            color: $royalblue;
+        }
+    }
 }
