@@ -413,3 +413,9 @@
     color: #007DCF; }
     .message.info-message .icon {
       color: #007DCF; }
+
+
+.btn-flexible-width {
+  width: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem; }
