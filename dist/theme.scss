@@ -236,6 +236,8 @@ $font-family-base: $font-family-sans-serif;
     }
 
     .content {
+      font-size: 13px;
+
       span {
         width: 1.25rem;
         display: inline-block;
@@ -543,8 +545,8 @@ $classmail-blue: rgba(59, 139, 197, 1);
     }
 }
 /**
- * Fixed width buttons are restrictive and should be removed.
- * This class bypasses the fixed width buttons until a design overhaul is completed.
+ * Fixed width buttons are restrictive and should be removed. This class bypasses the fixed width buttons until a
+ * design overhaul is completed.
  *
  * This file was created in October 2021. If you still see this message and class in use in 2025, cry for humanity.
  */
