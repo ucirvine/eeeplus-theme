@@ -571,12 +571,12 @@ $classmail-blue: rgba(59, 139, 197, 1);
   padding-right: 1rem;
 }
 
-#myeee-global-navbar {
+#eee-global-navbar {
   display: none;
 }
 
 @media (min-width: 769px) {
-  #myeee-global-navbar {
+  #eee-global-navbar {
     font-family: $font-family-sans-serif;
     background-color: #013F68; // dark blue shade not in style guide
     display: block;
