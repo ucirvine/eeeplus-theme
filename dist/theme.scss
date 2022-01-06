@@ -110,6 +110,9 @@ $font-family-sans-serif: "Lato";
 $headings-font-family: "IBM Plex Sans";
 $font-family-base: $font-family-sans-serif;
 
+// Common Font Sizes
+$font-size-10: .625rem;
+$font-size-18: 1.15rem;
 // Background colors
 .bg-blue-light {
   background-color: $smoke !important;
@@ -151,6 +154,18 @@ $font-family-base: $font-family-sans-serif;
   @media (max-width: 420px) {
     font-size: 12px;
   }
+}
+
+.font-size-10 {
+  font-size: $font-size-10;
+}
+
+.font-size-18 {
+  font-size: $font-size-18;
+}
+
+.color-white {
+  color: white;
 }
 
 .font-size-14 {
@@ -554,4 +569,104 @@ $classmail-blue: rgba(59, 139, 197, 1);
   width: auto !important;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+#myeee-global-navbar {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  #myeee-global-navbar {
+    font-family: $font-family-sans-serif;
+    background-color: #013F68; // dark blue shade not in style guide
+    display: block;
+
+    a {
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+      }
+    }
+
+    .dropdown-menu {
+      background-color: white;
+      width: 280px;
+      border-radius: 0px 10px 10px 10px;
+
+      a {
+        color: black;
+      }
+
+      h6 {
+        margin-top: 7px;
+        margin-bottom: 13px;
+        font-size: 12px;
+        font-family: $font-family-sans-serif;
+      }
+
+      .toolset-additional-links-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 15px;
+
+        div {
+          width: 50%;
+          margin-bottom: 5px;
+
+          a {
+            font-size: $font-size-10;
+            color: $royalblue;
+
+            &:hover {
+              color: $royalblue;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .toolset-links-section {
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+          font-size: $font-size-10;
+          margin-right: 18px;
+          margin-bottom: 8px;
+          padding-top: 10px;
+          padding-bottom: 12px;
+          height: 80px;
+          width: 70px;
+          text-align: center;
+          border: 2px solid $smoke;
+          border-radius: 6px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+
+          &:hover {
+            background-color: $lightyellow;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            margin-bottom: 0;
+
+            span {
+              line-height: normal;
+            }
+          }
+        }
+
+        // remove margin every 3rd tool link
+        a:nth-of-type(3n + 3) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }

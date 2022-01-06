@@ -23,7 +23,8 @@ function mergeSass(done) {
             'src/buttons.scss',
             'src/demo.scss',
             'src/messages.scss',
-            'src/flexible-button-bypass.scss'
+            'src/flexible-button-bypass.scss',
+            'src/myeeeplus-global-navbar.scss'
         ])
         .pipe(concat('theme.scss'))
         .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss

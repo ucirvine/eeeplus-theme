@@ -94,6 +94,15 @@
     .font-size-16-mobile-12 {
       font-size: 12px; } }
 
+.font-size-10 {
+  font-size: 0.625rem; }
+
+.font-size-18 {
+  font-size: 1.15rem; }
+
+.color-white {
+  color: white; }
+
 .font-size-14 {
   font-size: 0.875rem; }
 
@@ -421,3 +430,69 @@
   width: auto !important;
   padding-left: 1rem;
   padding-right: 1rem; }
+
+#myeee-global-navbar {
+  display: none; }
+
+@media (min-width: 769px) {
+  #myeee-global-navbar {
+    font-family: "Lato";
+    background-color: #013F68;
+    display: block; }
+    #myeee-global-navbar a {
+      color: white; }
+      #myeee-global-navbar a:hover {
+        cursor: pointer;
+        color: white;
+        text-decoration: none; }
+    #myeee-global-navbar .dropdown-menu {
+      background-color: white;
+      width: 280px;
+      border-radius: 0px 10px 10px 10px; }
+      #myeee-global-navbar .dropdown-menu a {
+        color: black; }
+      #myeee-global-navbar .dropdown-menu h6 {
+        margin-top: 7px;
+        margin-bottom: 13px;
+        font-size: 12px;
+        font-family: "Lato"; }
+      #myeee-global-navbar .dropdown-menu .toolset-additional-links-section {
+        display: flex;
+        flex-wrap: wrap;
+        padding-right: 15px; }
+        #myeee-global-navbar .dropdown-menu .toolset-additional-links-section div {
+          width: 50%;
+          margin-bottom: 5px; }
+          #myeee-global-navbar .dropdown-menu .toolset-additional-links-section div a {
+            font-size: 0.625rem;
+            color: #007DCF; }
+            #myeee-global-navbar .dropdown-menu .toolset-additional-links-section div a:hover {
+              color: #007DCF;
+              text-decoration: underline; }
+      #myeee-global-navbar .dropdown-menu .toolset-links-section {
+        display: flex;
+        flex-wrap: wrap; }
+        #myeee-global-navbar .dropdown-menu .toolset-links-section a {
+          font-size: 0.625rem;
+          margin-right: 18px;
+          margin-bottom: 8px;
+          padding-top: 10px;
+          padding-bottom: 12px;
+          height: 80px;
+          width: 70px;
+          text-align: center;
+          border: 2px solid #F2F2F2;
+          border-radius: 6px;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); }
+          #myeee-global-navbar .dropdown-menu .toolset-links-section a:hover {
+            background-color: #FEFBF2; }
+          #myeee-global-navbar .dropdown-menu .toolset-links-section a div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            margin-bottom: 0; }
+            #myeee-global-navbar .dropdown-menu .toolset-links-section a div span {
+              line-height: normal; }
+        #myeee-global-navbar .dropdown-menu .toolset-links-section a:nth-of-type(3n + 3) {
+          margin-right: 0; } }
