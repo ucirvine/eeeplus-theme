@@ -434,7 +434,7 @@
 #eee-global-navbar {
   display: none; }
 
-@media (min-width: 769px) {
+@media (min-width: 993px) {
   #eee-global-navbar {
     font-family: "Lato";
     background-color: #013F68;
