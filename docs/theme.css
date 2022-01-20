@@ -485,7 +485,8 @@
           border-radius: 6px;
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); }
           #eee-global-navbar .dropdown-menu .toolset-links-section a:hover {
-            background-color: #FEFBF2; }
+            background-color: #FEFBF2;
+            font-weight: bold; }
           #eee-global-navbar .dropdown-menu .toolset-links-section a div {
             display: flex;
             align-items: center;
