@@ -44,62 +44,62 @@ $classmail-blue: rgba(59, 139, 197, 1);
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
 }
 
 
@@ -210,6 +210,98 @@ $font-size-18: 1.15rem;
 
 .color-lightgrey {
   color: $lightgrey;
+}
+
+.color-uciblue {
+  color: $uciblue;
+}
+
+.color-cerulean {
+  color: $cerulean;
+}
+
+.color-evergreen {
+  color: $evergreen;
+}
+
+.color-ucigold {
+  color: $ucigold;
+}
+
+.color-yellow {
+  color: $yellow;
+}
+
+.color-valencia {
+  color: $valencia;
+}
+
+.color-olive {
+  color: $olive;
+}
+
+.color-red {
+  color: $red;
+}
+
+.color-purple {
+  color: $purple;
+}
+
+.color-lightyellow {
+  color: $lightyellow;
+}
+
+.color-lightpeach {
+  color: $lightpeach;
+}
+
+.color-lightpurple {
+  color: $lightpurple;
+}
+
+.color-snow {
+  color: $snow;
+}
+
+.color-greyblue {
+  color: $greyblue;
+}
+
+.color-kiwi {
+  color: $kiwi;
+}
+
+.color-sherbert {
+  color: $sherbert;
+}
+
+.color-grey {
+  color: $grey;
+}
+
+.color-smoke {
+  color: $smoke;
+}
+
+.color-chalk {
+  color: $chalk;
+}
+
+.color-black {
+  color: $black;
+}
+
+.color-darkgrey {
+  color: $darkgrey;
+}
+
+.color-highlightyellow {
+  color: $highlightyellow;
+}
+
+.color-lightgreen {
+  color: $lightgreen;
 }
 
 .dark-blue-border-top {

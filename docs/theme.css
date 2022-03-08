@@ -5,61 +5,61 @@
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAXC-v.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v20/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh50XSwiPHA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format("truetype"); }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format("truetype"); }
 
 .bg-blue-light {
   background-color: #F2F2F2 !important; }
@@ -135,6 +135,75 @@
 
 .color-lightgrey {
   color: #E0E0E0; }
+
+.color-uciblue {
+  color: #005993; }
+
+.color-cerulean {
+  color: #7FBDE6; }
+
+.color-evergreen {
+  color: #01796B; }
+
+.color-ucigold {
+  color: #F1C120; }
+
+.color-yellow {
+  color: #F5D158; }
+
+.color-valencia {
+  color: #EF6C01; }
+
+.color-olive {
+  color: #5D884B; }
+
+.color-red {
+  color: #B81137; }
+
+.color-purple {
+  color: #7B1FA2; }
+
+.color-lightyellow {
+  color: #FEFBF2; }
+
+.color-lightpeach {
+  color: #F1D9C7; }
+
+.color-lightpurple {
+  color: #F8F4FA; }
+
+.color-snow {
+  color: #F6F8FB; }
+
+.color-greyblue {
+  color: #F2F9FD; }
+
+.color-kiwi {
+  color: #E4F3DD; }
+
+.color-sherbert {
+  color: #FFF1E8; }
+
+.color-grey {
+  color: #BDBDBD; }
+
+.color-smoke {
+  color: #F2F2F2; }
+
+.color-chalk {
+  color: #FFFFFF; }
+
+.color-black {
+  color: #000000; }
+
+.color-darkgrey {
+  color: #333333; }
+
+.color-highlightyellow {
+  color: #FFFFDD; }
+
+.color-lightgreen {
+  color: #EAFBEB; }
 
 .dark-blue-border-top {
   border-top: 1rem solid #005993; }
