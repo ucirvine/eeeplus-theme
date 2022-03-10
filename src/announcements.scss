@@ -10,6 +10,10 @@
     .content {
       font-size: 13px;
 
+      div:last-of-type p {
+        margin-bottom: 0;
+      }
+
       span {
         width: 1.25rem;
         display: inline-block;
