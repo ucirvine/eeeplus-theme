@@ -1,3 +1,4 @@
+//TODO: Remove whitespace at bottom of announcements (https://jira.oit.uci.edu/browse/AWTDEV-5045)
 #announcements-container {
   .announcement {
     background-color: white;
@@ -9,10 +10,6 @@
 
     .content {
       font-size: 13px;
-
-      div:last-of-type p {
-        margin-bottom: 0;
-      }
 
       span {
         width: 1.25rem;

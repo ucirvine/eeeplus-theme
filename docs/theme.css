@@ -236,8 +236,6 @@
     color: #005993; }
   #announcements-container .announcement .content {
     font-size: 13px; }
-    #announcements-container .announcement .content div:last-of-type p {
-      margin-bottom: 0; }
     #announcements-container .announcement .content span {
       width: 1.25rem;
       display: inline-block; }
