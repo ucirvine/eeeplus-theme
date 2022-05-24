@@ -1,5 +1,5 @@
-import RegularModalHtml from "./RegularModalHtml";
-import DangerModalHtml from "./DangerModalHtml";
+RegularModalHtml = require('./RegularModalHtml');
+DangerModalHtml = require('./DangerModalHtml');
 
 /**
  * divToImportInto: the div ID to hold the modal
