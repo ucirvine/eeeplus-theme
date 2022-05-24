@@ -17,5 +17,3 @@ const RegularModalHtml =
     '        </div>\n' +
     '    </div>\n' +
     '</div>';
-
-export default RegularModalHtml;

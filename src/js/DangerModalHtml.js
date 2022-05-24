@@ -17,5 +17,3 @@ const DangerModalHtml =
     '        </div>\n' +
     '    </div>\n' +
     '</div>';
-
-export default DangerModalHtml;
