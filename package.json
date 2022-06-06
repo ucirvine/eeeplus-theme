@@ -16,13 +16,16 @@
     "gulp-scss-combine": "^1.0.0",
     "gulp-strip-css-comments": "^2.0.0",
     "lodash.template": "^4.5.0",
-    "sass": "^1.51.0"
+    "sass": "^1.51.0",
+    "webpack-cli": "^4.9.2"
   },
   "description": "EEE+ Theme",
   "main": "gulpfile.js",
   "dependencies": {
+    "@ungap/custom-elements": "^1.1.0",
     "gulp-cssimport": "^7.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "webpack": "^5.72.1"
   },
   "repository": {
     "type": "git",
