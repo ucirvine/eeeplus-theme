@@ -1,5 +1,19 @@
 // Create a class for the element
-class BaseModal extends HTMLDivElement {
+import {BaseButton} from "./BaseButton";
+
+export class BaseModal extends HTMLDivElement {
+    modalDialog = document.createElement('div');
+    modalContent = document.createElement('div');
+    modalHeader = document.createElement('div');
+    modalTitle = document.createElement('h5');
+    modalCloseButton = document.createElement('button');
+    modalBody = document.createElement('div');
+    modalBodyText = document.createElement('p');
+    modalBodyInput = document.createElement('input');
+    modalFooter = document.createElement('div');
+    modalFooterCloseButton = document.createElement('button');
+    modalFooterSaveButton = document.createElement('button');
+
     constructor() {
         // Always call super first in constructor
         super();
@@ -8,76 +22,67 @@ class BaseModal extends HTMLDivElement {
         // const shadow = this.attachShadow({mode: 'open'});
 
         this.className = 'modal';
-        this.id = 'custom-modal';
         this.tabIndex = -1;
 
-        const modalDialog = document.createElement('div');
-        modalDialog.setAttribute('class', 'modal-dialog');
+        this.modalDialog.className = 'modal-dialog';
 
-        this.appendChild(modalDialog);
+        this.appendChild(this.modalDialog);
 
-        const modalContent = document.createElement('div');
-        modalContent.setAttribute('class', 'modal-content');
+        this.modalContent.className = 'modal-content';
 
-        modalDialog.appendChild(modalContent);
+        this.modalDialog.appendChild(this.modalContent);
 
-        const modalHeader = document.createElement('div');
-        modalHeader.setAttribute('class', 'modal-header');
+        this.modalHeader.className = 'modal-header';
 
-        modalContent.appendChild(modalHeader);
+        this.modalContent.appendChild(this.modalHeader);
 
-        const modalTitle = document.createElement('h5');
-        modalTitle.setAttribute('class', 'modal-title');
-        modalTitle.innerHTML = 'Modal title';
+        this.modalTitle.className = 'modal-title';
 
-        modalHeader.appendChild(modalTitle);
+        this.modalHeader.appendChild(this.modalTitle);
 
-        const modalCloseButton = document.createElement('button');
-        modalCloseButton.className = 'btn-close';
-        modalCloseButton.type = 'button';
-        modalCloseButton.setAttribute('data-bs-dismiss', 'modal');
-        modalCloseButton.setAttribute('aria-label', 'Close');
+        this.modalCloseButton.className = 'btn-close';
+        this.modalCloseButton.type = 'button';
+        this.modalCloseButton.setAttribute('data-bs-dismiss', 'modal');
+        this.modalCloseButton.setAttribute('aria-label', 'Close');
 
-        modalHeader.appendChild(modalCloseButton);
+        this.modalHeader.appendChild(this.modalCloseButton);
 
-        const modalBody = document.createElement('div');
-        modalBody.setAttribute('class', 'modal-body');
+        this.modalBody.className = 'modal-body';
 
-        modalContent.appendChild(modalBody);
+        this.modalContent.appendChild(this.modalBody);
 
-        const modalBodyText = document.createElement('p');
-        modalBodyText.setAttribute('class', 'modal-body-text');
-        modalBodyText.innerHTML = 'lksdjflkjsdf';
+        this.modalBodyText.className = 'modal-body-text';
 
-        modalBody.appendChild(modalBodyText);
+        this.modalBody.appendChild(this.modalBodyText);
 
-        const modalBodyInput = document.createElement('input');
-        modalBodyInput.className = 'form-control';
-        modalBodyInput.id = 'uci-modal-input';
+        this.modalBodyInput.className = 'form-control';
+        this.modalBodyInput.id = 'uci-modal-input';
 
-        modalBody.appendChild(modalBodyInput);
+        this.modalBody.appendChild(this.modalBodyInput);
 
-        const modalFooter = document.createElement('div');
-        modalFooter.className = 'modal-footer';
+        this.modalFooter.className = 'modal-footer';
 
-        modalContent.appendChild(modalFooter);
+        this.modalContent.appendChild(this.modalFooter);
 
-        const modalFooterCloseButton = document.createElement('button');
-        modalFooterCloseButton.className = 'btn btn-secondary';
-        modalFooterCloseButton.setAttribute('data-bs-dismiss', 'modal');
-        modalFooterCloseButton.textContent = 'Close';
+        this.modalFooterCloseButton.className = 'btn btn-secondary';
+        this.modalFooterCloseButton.setAttribute('data-bs-dismiss', 'modal');
+        this.modalFooterCloseButton.textContent = 'Close';
 
-        const modalFooterSaveButton = document.createElement('button');
-        modalFooterSaveButton.className = 'btn btn-primary';
-        modalFooterSaveButton.textContent = 'Save';
+        this.modalFooterSaveButton.className = 'btn btn-primary';
+        this.modalFooterSaveButton.textContent = 'Save';
 
-        modalFooter.appendChild(modalFooterCloseButton);
-        modalFooter.appendChild(modalFooterSaveButton);
+        this.modalFooter.appendChild(this.modalFooterCloseButton);
+        this.modalFooter.appendChild(this.modalFooterSaveButton);
 
         // Take attribute content and put it inside the info span
         // const text = this.getAttribute('data-text');
         // info.textContent = text;
-
+    }
+    /**
+     * This is called when the item appears in the DOM (pretty sure)
+     */
+    connectedCallback() {
+        this.modalBodyText.textContent = this.getAttribute('data-body-text');
     }
 }
 
