@@ -1,10 +1,11 @@
 import {BaseButton} from './BaseButton';
+import {StaticVariables} from './StaticVariables';
 
 /**
  * Create a class for the element
  * This is a UciPrimaryButton
  */
-class UciSecondaryButton extends BaseButton {
+export class UciSecondaryButton extends BaseButton {
     constructor() {
         // Always call super first in constructor
         super();
@@ -19,7 +20,7 @@ class UciSecondaryButton extends BaseButton {
      * This is called when the item appears in the DOM (pretty sure)
      */
     connectedCallback() {
-        this.setButtonClass(BaseButton.ButtonTypeSecondary);
+        this.setButtonClass(StaticVariables.ButtonTypeSecondary);
     }
 
     /**

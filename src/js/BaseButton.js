@@ -1,13 +1,7 @@
 import '@ungap/custom-elements';
+import {StaticVariables} from './StaticVariables';
 
 export class BaseButton extends HTMLButtonElement {
-    static ButtonTypePrimary = 'primary';
-    static ButtonTypeSecondary = 'secondary';
-    static ButtonTypeOutlinePrimary = 'outline-primary';
-
-    static ButtonCssPrimary = 'btn btn-primary';
-    static ButtonCssSecondary = 'btn btn-secondary';
-
     constructor() {
         // Always call super first in constructor
         super();
@@ -18,15 +12,15 @@ export class BaseButton extends HTMLButtonElement {
             ? ' ' + this.getAttribute('class')
             : '');
         switch (buttonType) {
-            case BaseButton.ButtonTypePrimary:
-                this.className = BaseButton.ButtonCssPrimary + userDefinedClass;
+            case StaticVariables.ButtonTypePrimary:
+                this.className = StaticVariables.ButtonCssPrimary + userDefinedClass;
                 break;
-            case BaseButton.ButtonTypeSecondary:
-            case BaseButton.ButtonTypeOutlinePrimary:
-                this.className = BaseButton.ButtonCssSecondary + userDefinedClass;
+            case StaticVariables.ButtonTypeSecondary:
+            case StaticVariables.ButtonTypeOutlinePrimary:
+                this.className = StaticVariables.ButtonCssSecondary + userDefinedClass;
                 break;
             default:
-                this.className = BaseButton.ButtonTypePrimary + userDefinedClass;
+                this.className = StaticVariables.ButtonTypePrimary + userDefinedClass;
         }
     }
 }
