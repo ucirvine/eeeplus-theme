@@ -9,9 +9,10 @@ class UciPrimaryButton extends BaseButton {
         // Always call super first in constructor
         super();
 
-        this.addEventListener('click', e => {
-            alert('test');
-        })
+        // here as an example
+        // this.addEventListener('click', e => {
+        //     alert('test');
+        // })
     }
 
     /**

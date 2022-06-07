@@ -23,6 +23,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "@ungap/custom-elements": "^1.1.0",
+    "bootstrap": "^5.1.3",
     "gulp-cssimport": "^7.0.0",
     "gulp-uglify": "^3.0.2",
     "webpack": "^5.72.1"

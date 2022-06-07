@@ -1,70 +1,85 @@
-import RegularModalHtml from './RegularModalHtml';
-import DangerModalHtml from './DangerModalHtml';
+// Create a class for the element
+class BaseModal extends HTMLDivElement {
+    constructor() {
+        // Always call super first in constructor
+        super();
 
-/**
- * divToImportInto: the div ID to hold the modal
- * modalSize: modal-xl, modal-lg, modal-sm, modal-fullscreen
- * modalStyle: normal, danger, warning
- */
-export class BaseModal {
-    constructor(divToImportInto, modalSize, modalStyle) {
-        $(divToImportInto).html(DangerModalHtml);
-        $('.modal-dialog').addClass(modalSize);
-        $('.modal').addClass(modalStyle);
-        this.baseModal = new bootstrap.Modal($(divToImportInto + ' .modal'));
-        return this;
-    }
+        // Create a shadow root
+        // const shadow = this.attachShadow({mode: 'open'});
 
-    /**
-     * Show the daggum modal
-     */
-    show() {
-        $('.modal-title').html(this.title).css(
-            {'color': this.headerTextColor, 'background-color': this.headerBackgroundColor}
-        );
+        this.className = 'modal';
+        this.id = 'custom-modal';
+        this.tabIndex = -1;
 
-        $('.modal-body-text').html(this.modalBodyText);
+        const modalDialog = document.createElement('div');
+        modalDialog.setAttribute('class', 'modal-dialog');
 
-        this.baseModal.show();
-    }
+        this.appendChild(modalDialog);
 
-    /**
-     * Set the title of the modal
-     * @param value
-     * @returns {BaseModal}
-     */
-    setTitle(value) {
-        this.title = value;
-        return this;
-    }
+        const modalContent = document.createElement('div');
+        modalContent.setAttribute('class', 'modal-content');
 
-    /**
-     * Change the text color of the header
-     * @param value
-     * @returns {BaseModal}
-     */
-    setHeaderTextColor(value) {
-        this.headerTextColor = value;
-        return this;
-    }
+        modalDialog.appendChild(modalContent);
 
-    /**
-     * Change the background color of the header
-     * @param value
-     * @returns {BaseModal}
-     */
-    setHeaderBackgroundColor(value) {
-        this.headerBackgroundColor = value;
-        return this;
-    }
+        const modalHeader = document.createElement('div');
+        modalHeader.setAttribute('class', 'modal-header');
 
-    /**
-     * Change the modals text in the body
-     * @param value
-     * @returns {BaseModal}
-     */
-    setModalBodyText(value) {
-        this.modalBodyText = value;
-        return this;
+        modalContent.appendChild(modalHeader);
+
+        const modalTitle = document.createElement('h5');
+        modalTitle.setAttribute('class', 'modal-title');
+        modalTitle.innerHTML = 'Modal title';
+
+        modalHeader.appendChild(modalTitle);
+
+        const modalCloseButton = document.createElement('button');
+        modalCloseButton.className = 'btn-close';
+        modalCloseButton.type = 'button';
+        modalCloseButton.setAttribute('data-bs-dismiss', 'modal');
+        modalCloseButton.setAttribute('aria-label', 'Close');
+
+        modalHeader.appendChild(modalCloseButton);
+
+        const modalBody = document.createElement('div');
+        modalBody.setAttribute('class', 'modal-body');
+
+        modalContent.appendChild(modalBody);
+
+        const modalBodyText = document.createElement('p');
+        modalBodyText.setAttribute('class', 'modal-body-text');
+        modalBodyText.innerHTML = 'lksdjflkjsdf';
+
+        modalBody.appendChild(modalBodyText);
+
+        const modalBodyInput = document.createElement('input');
+        modalBodyInput.className = 'form-control';
+        modalBodyInput.id = 'uci-modal-input';
+
+        modalBody.appendChild(modalBodyInput);
+
+        const modalFooter = document.createElement('div');
+        modalFooter.className = 'modal-footer';
+
+        modalContent.appendChild(modalFooter);
+
+        const modalFooterCloseButton = document.createElement('button');
+        modalFooterCloseButton.className = 'btn btn-secondary';
+        modalFooterCloseButton.setAttribute('data-bs-dismiss', 'modal');
+        modalFooterCloseButton.textContent = 'Close';
+
+        const modalFooterSaveButton = document.createElement('button');
+        modalFooterSaveButton.className = 'btn btn-primary';
+        modalFooterSaveButton.textContent = 'Save';
+
+        modalFooter.appendChild(modalFooterCloseButton);
+        modalFooter.appendChild(modalFooterSaveButton);
+
+        // Take attribute content and put it inside the info span
+        // const text = this.getAttribute('data-text');
+        // info.textContent = text;
+
     }
 }
+
+// Define the new element
+customElements.define('base-modal', BaseModal, {extends: 'div'});
