@@ -6,7 +6,8 @@ module.exports = [
             './src/js/UciPrimaryButton.js',
             './src/js/UciSecondaryButton.js',
             './src/js/BaseModal.js',
-            './src/js/UciRegularModal.js'
+            './src/js/UciPrimarySmallButton.js',
+            './src/js/UciSecondarySmallButton.js',
             ],
         output: {
             filename: 'custom.js',

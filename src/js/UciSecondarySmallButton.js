@@ -5,7 +5,7 @@ import {StaticVariables} from "./StaticVariables";
  * Create a class for the element
  * This is a UciPrimaryButton
  */
-export class UciPrimaryButton extends BaseButton {
+export class UciSecondarySmallButton extends BaseButton {
     constructor() {
         // Always call super first in constructor
         super();
@@ -20,7 +20,7 @@ export class UciPrimaryButton extends BaseButton {
      * This is called when the item appears in the DOM (pretty sure)
      */
     connectedCallback() {
-        this.className = StaticVariables.ButtonCssPrimary;
+        this.setButtonClass(StaticVariables.ButtonTypeSecondarySmall);
     }
 
     /**
@@ -47,4 +47,4 @@ export class UciPrimaryButton extends BaseButton {
  * Define the new element
  * When placing on a page, you will define as <button is="uci-button"></button>
  */
-customElements.define('uci-primary-button', UciPrimaryButton, {extends: 'button'});
+customElements.define('uci-secondary-small-button', UciSecondarySmallButton, {extends: 'button'});

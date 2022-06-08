@@ -19,6 +19,12 @@ export class BaseButton extends HTMLButtonElement {
             case StaticVariables.ButtonTypeOutlinePrimary:
                 this.className = StaticVariables.ButtonCssSecondary + userDefinedClass;
                 break;
+            case StaticVariables.ButtonTypePrimarySmall:
+                this.className = StaticVariables.ButtonCssPrimarySmall + userDefinedClass;
+                break;
+            case StaticVariables.ButtonTypeSecondarySmall:
+                this.className = StaticVariables.ButtonCssSecondarySmall + userDefinedClass;
+                break;
             default:
                 this.className = StaticVariables.ButtonTypePrimary + userDefinedClass;
         }
