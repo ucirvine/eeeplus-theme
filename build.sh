@@ -4,8 +4,7 @@
 # This file builds the EEEPlus theme. Be sure to run npm install before running this script.
 ####
 
-# Merge SCSS files into the distributed theme file. Note that this is not done using a wild card in order for items
-# to be imported in the correct order
+# Merge SCSS files into the distributed theme file. See README for more details on merging.
 cat 'src/colors.scss' > dist/theme.scss
 cat 'src/tool-colors.scss' >> dist/theme.scss
 cat 'src/typography.scss' >> dist/theme.scss

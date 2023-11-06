@@ -356,12 +356,6 @@ $font-size-18: 1.15rem;
 /* Put button things in here */
 
 .btn-primary, .btn-secondary, .btn-outline-primary {
-  width: 10rem;
-  font-size: 1rem;
-  font-weight: 700;
-  height: 3rem;
-  line-height: 2.8rem;  // The 2.8 centers the text vertically in the button bc Lato adds a tiny space on the top
-  padding: 0;
   border: 2px solid $royalblue;
   text-transform: uppercase;
   &:hover {
@@ -402,52 +396,6 @@ $font-size-18: 1.15rem;
     background-color: white;
     color: $cerulean;
   }
-}
-
-.btn-sm {
-  width: 6.875rem;
-  font-size: 0.875rem;
-  height: 2.375rem;
-  line-height: 2.2rem;
-}
-
-.giles-button {
-  color: $royalblue;
-  background-color: $snow;
-  border: 2px solid $royalblue;
-  height: 3rem;
-  font-weight: bold;
-  line-height: 2rem;
-  &:hover {
-    box-shadow: 0 3px 3px 1px #aaa;
-    border-color: $uciblue;
-    color: $uciblue;
-  }
-  &:disabled {
-    opacity: 1;  // This overrides the default opacity since we don't want any transparency
-    border-color: $cerulean;
-    color: $cerulean;
-    &:hover {
-      box-shadow: none;
-      cursor: default;
-      color: $cerulean;
-    }
-    &:focus {
-      box-shadow: none;  // This is so that if a user clicks on the disabled button, it won't be outlined
-    }
-  }
-}
-
-.long-cta-btn {
-  width: 220px;
-  height: 48px;
-}
-
-.long-cta-btn-sm {
-  width: 170px;
-  height: 38px;
-  font-size: 0.875rem;
-  line-height: 2.2rem;
 }
 /* This is for the demo docs, don't really need to change much stuff here
  * unless adding new elements
