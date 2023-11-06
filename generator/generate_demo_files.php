@@ -244,9 +244,6 @@ $scssLines[] = <<<SCSS
  * unless adding new elements
  */
 
- @import 'colors.scss';
- @import 'tool-colors.scss';
-
  #eeeplus-theme-demo {
 
 SCSS;

@@ -11,8 +11,8 @@ Install this like any other NPM package. See https://www.npmjs.com/package/@ucir
 ### Requirements
 
 **Software**
-* PHP 7.3
-* NPM (latest LTS)
+* PHP `^7.0`
+* Yarn `^1.22`
 
 **To make changes**
 * GitHub.com account
