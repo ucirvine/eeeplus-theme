@@ -44,62 +44,62 @@ $classmail-blue: rgba(59, 139, 197, 1);
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: italic;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
 }
 @font-face {
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v14/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
 }
 
 
@@ -337,6 +337,7 @@ $font-size-18: 1.15rem;
   }
 }
 
+//TODO: Remove whitespace at bottom of announcements (https://jira.oit.uci.edu/browse/AWTDEV-5045)
 #announcements-container {
   .announcement {
     background-color: white;

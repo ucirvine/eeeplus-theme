@@ -2,11 +2,15 @@
 
 const gulp = require('gulp');
 const sassCombine = require('gulp-scss-combine');
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const stripCssComments = require('gulp-strip-css-comments');
 const cssimport = require('gulp-cssimport');
+const uglify = require('gulp-uglify');
 
+const files = {
+    jsPath: 'src/js/**/*.js',
+};
 
 /**
  * This merges all the SCSS in src into theme.scss
@@ -30,7 +34,7 @@ function mergeSass(done) {
         .pipe(cssimport(/^https:\/\//gi))  // Gets the content of the url import in typography.scss
         .pipe(sassCombine())
         .pipe(gulp.dest('./dist/'))
-    ;
+        ;
 }
 
 /**
@@ -44,11 +48,28 @@ function generateCss(done) {
         ;
 }
 
+/**
+ * merge and uglify js files
+ * @returns {*}
+ */
+function mergeJs() {
+    return gulp.src([files.jsPath])
+        .pipe(concat('theme.js'))
+        .pipe(uglify({
+            mangle: true,
+            sourceMap: false,
+            compress: true
+        }))
+        .pipe(gulp.dest('dist', {sourcemaps: '.'}))
+        ;
+}
+
 gulp.task('merge', mergeSass);
 gulp.task('generate', generateCss);
+gulp.task('mergeJs', mergeJs);
 
 gulp.task('default',
-    gulp.series('merge', 'generate', function (done) {
+    gulp.series('merge', 'generate', 'mergeJs', function (done) {
         done();
     })
 );
