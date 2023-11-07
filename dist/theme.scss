@@ -34,74 +34,12 @@ $pinkred: #F8E7EB;
 $lightpeach: #F1D9C7;
 $skyblue: #E6F4FE;
 $lightgreen: #EAFBEB;
-
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
 $classmail-blue: rgba(59, 139, 197, 1);
-
 /* Put typography things here */
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u8w4BMUTPHjxsAXC-v.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh7USSwiPHA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh6UVSwiPHA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 900;
-  src: url(https://fonts.gstatic.com/s/lato/v22/S6u9w4BMUTPHh50XSwiPHA.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX-KVElMYYaJe8bpLHnCwDKhdTuF6ZM.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjXr8AIFscQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYXgKVElMYYaJe8bpLHnCwDKhdHeEA.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjQ76AIFscQ.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/ibmplexsans/v13/zYX9KVElMYYaJe8bpLHnCwDKjWr7AIFscQ.ttf) format('truetype');
-}
-
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,600,700,900');
 
 // Font config
 $font-size-base: 0.82rem;
@@ -336,7 +274,7 @@ $font-size-18: 1.15rem;
     font-size: 12rem;
   }
 }
-
+//TODO: Remove whitespace at bottom of announcements (https://jira.oit.uci.edu/browse/AWTDEV-5045)
 #announcements-container {
   .announcement {
     background-color: white;
@@ -415,16 +353,9 @@ $font-size-18: 1.15rem;
     }
   }
 }
-
 /* Put button things in here */
 
 .btn-primary, .btn-secondary, .btn-outline-primary {
-  width: 10rem;
-  font-size: 1rem;
-  font-weight: 700;
-  height: 3rem;
-  line-height: 2.8rem;  // The 2.8 centers the text vertically in the button bc Lato adds a tiny space on the top
-  padding: 0;
   border: 2px solid $royalblue;
   text-transform: uppercase;
   &:hover {
@@ -466,98 +397,9 @@ $font-size-18: 1.15rem;
     color: $cerulean;
   }
 }
-
-.btn-sm {
-  width: 6.875rem;
-  font-size: 0.875rem;
-  height: 2.375rem;
-  line-height: 2.2rem;
-}
-
-.giles-button {
-  color: $royalblue;
-  background-color: $snow;
-  border: 2px solid $royalblue;
-  height: 3rem;
-  font-weight: bold;
-  line-height: 2rem;
-  &:hover {
-    box-shadow: 0 3px 3px 1px #aaa;
-    border-color: $uciblue;
-    color: $uciblue;
-  }
-  &:disabled {
-    opacity: 1;  // This overrides the default opacity since we don't want any transparency
-    border-color: $cerulean;
-    color: $cerulean;
-    &:hover {
-      box-shadow: none;
-      cursor: default;
-      color: $cerulean;
-    }
-    &:focus {
-      box-shadow: none;  // This is so that if a user clicks on the disabled button, it won't be outlined
-    }
-  }
-}
-
-.long-cta-btn {
-  width: 220px;
-  height: 48px;
-}
-
-.long-cta-btn-sm {
-  width: 170px;
-  height: 38px;
-  font-size: 0.875rem;
-  line-height: 2.2rem;
-}
-
 /* This is for the demo docs, don't really need to change much stuff here
  * unless adding new elements
  */
-
- /* Put color variables in here */
-$uciblue: #005993;
-$royalblue: #007DCF;
-$oceanblue: #3B8BC5;
-$cerulean: #7FBDE6;
-$evergreen: #01796B;
-$ucigold: #F1C120;
-$yellow: #F5D158;
-$valencia: #EF6C01;
-$olive: #5D884B;
-$red: #B81137;
-$purple: #7B1FA2;
-$sienna: #C96620;
-$evergreen: #01796B;
-$lightyellow: #FEFBF2;
-$lightpeach: #F1D9C7;
-$lightpurple: #F8F4FA;
-$snow: #F6F8FB;
-$greyblue: #F2F9FD;
-$skyblue: #E6F4FE;
-$kiwi: #E4F3DD;
-$sherbert: #FFF1E8;
-$grey: #BDBDBD;
-$lightgrey: #E0E0E0;
-$smoke: #F2F2F2;
-$chalk: #FFFFFF;
-$black: #000000;
-$darkgrey: #333333;
-$slate: #4F4F4F;
-$stone: #828282;
-$highlightyellow: #FFFFDD;
-$lightpurple: #F8F4FA;
-$pinkred: #F8E7EB;
-$lightpeach: #F1D9C7;
-$skyblue: #E6F4FE;
-$lightgreen: #EAFBEB;
-
- /* Tool specific colors */
-$assistants-blue: rgba(59, 139, 197, 1);
-$classmail-blue: rgba(59, 139, 197, 1);
-
 
  #eeeplus-theme-demo {
 .bg-uciblue { background-color: $uciblue; }
@@ -598,7 +440,6 @@ $classmail-blue: rgba(59, 139, 197, 1);
 .bg-assistants-blue { background-color: $assistants-blue; }
 .bg-classmail-blue { background-color: $classmail-blue; }
 }
-
 .message {
     box-sizing: border-box;
     border-radius: .25rem;
@@ -666,7 +507,6 @@ $classmail-blue: rgba(59, 139, 197, 1);
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 #eee-global-navbar {
   display: none;
 }

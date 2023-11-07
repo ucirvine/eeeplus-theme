@@ -1,27 +1,15 @@
 {
   "name": "@ucirvine/eeeplus-theme",
-  "version": "1.10.4",
+  "version": "2.0.0",
   "license": "SEE LICENSE IN LICENSE",
   "private": false,
-  "scripts": {
-    "build": "php generator/generate_demo_files.php && gulp"
-  },
   "files": [
     "dist/*"
   ],
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.1.0",
-    "gulp-scss-combine": "^1.0.0",
-    "gulp-strip-css-comments": "^2.0.0",
-    "lodash.template": "^4.5.0",
-    "sass": "^1.49.9"
-  },
   "description": "EEE+ Theme",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-cssimport": "^7.0.0"
+    "sass": "^1.69.5"
   },
   "repository": {
     "type": "git",
