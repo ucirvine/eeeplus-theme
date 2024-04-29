@@ -1,25 +1,32 @@
 /* Put color variables in here */
+
+// Colors from styleguide
 $uciblue: #005993;
 $royalblue: #007DCF;
 $oceanblue: #3B8BC5;
-$cerulean: #7FBDE6;
-$evergreen: #01796B;
 $ucigold: #F1C120;
 $yellow: #F5D158;
+$yellowhighlight: #FFE387;
 $valencia: #EF6C01;
 $olive: #5D884B;
 $red: #B81137;
 $purple: #7B1FA2;
 $sienna: #C96620;
 $evergreen: #01796B;
-$lightyellow: #FEFBF2;
-$lightpeach: #F1D9C7;
-$lightpurple: #F8F4FA;
-$snow: #F6F8FB;
+
+// Pastels from styleguide
+$cerulean: #7FBDE6;
 $greyblue: #F2F9FD;
+$pinkred: #F8E7EB;
+$lightpeach: #F1D9C7;
+$lightyellow: #FEFBF2;
+$lightpurple: #F8F4FA;
 $skyblue: #E6F4FE;
 $kiwi: #E4F3DD;
 $sherbert: #FFF1E8;
+$snow: #F6F8FB;
+
+// Greytones from styleguide
 $grey: #BDBDBD;
 $lightgrey: #E0E0E0;
 $smoke: #F2F2F2;
@@ -28,12 +35,9 @@ $black: #000000;
 $darkgrey: #333333;
 $slate: #4F4F4F;
 $stone: #828282;
+
+// Not listed in styleguide (but used in MyEEE+, so keeping for compatibility)
 $highlightyellow: #FFFFDD;
-$lightpurple: #F8F4FA;
-$pinkred: #F8E7EB;
-$lightpeach: #F1D9C7;
-$skyblue: #E6F4FE;
-$lightgreen: #EAFBEB;
 /* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
 $classmail-blue: rgba(59, 139, 197, 1);
@@ -243,7 +247,7 @@ $font-size-18: 1.15rem;
 }
 
 .color-lightgreen {
-  color: $lightgreen;
+  color: $kiwi;
 }
 
 .dark-blue-border-top {
@@ -356,7 +360,7 @@ $font-size-18: 1.15rem;
 /* Put button things in here */
 
 .btn-primary, .btn-secondary, .btn-outline-primary {
-  border: 2px solid $royalblue;
+  border: 2px solid $uciblue;
   text-transform: uppercase;
   &:hover {
     box-shadow: 0 3px 3px 1px #aaa;
@@ -376,7 +380,7 @@ $font-size-18: 1.15rem;
 }
 
 .btn-primary {
-  background-color: $royalblue;
+  background-color: $uciblue;
   &:hover {
     background-color: $uciblue;
   }
@@ -387,7 +391,7 @@ $font-size-18: 1.15rem;
 
 .btn-secondary, .btn-outline-primary {
   background-color: white;
-  color: $royalblue;
+  color: $uciblue;
   &:hover {
     background-color: white;
     color: $uciblue;
@@ -405,24 +409,25 @@ $font-size-18: 1.15rem;
 .bg-uciblue { background-color: $uciblue; }
 .bg-royalblue { background-color: $royalblue; }
 .bg-oceanblue { background-color: $oceanblue; }
-.bg-cerulean { background-color: $cerulean; }
-.bg-evergreen { background-color: $evergreen; }
 .bg-ucigold { background-color: $ucigold; }
 .bg-yellow { background-color: $yellow; }
+.bg-yellowhighlight { background-color: $yellowhighlight; }
 .bg-valencia { background-color: $valencia; }
 .bg-olive { background-color: $olive; }
 .bg-red { background-color: $red; }
 .bg-purple { background-color: $purple; }
 .bg-sienna { background-color: $sienna; }
 .bg-evergreen { background-color: $evergreen; }
-.bg-lightyellow { background-color: $lightyellow; }
-.bg-lightpeach { background-color: $lightpeach; }
-.bg-lightpurple { background-color: $lightpurple; }
-.bg-snow { background-color: $snow; }
+.bg-cerulean { background-color: $cerulean; }
 .bg-greyblue { background-color: $greyblue; }
+.bg-pinkred { background-color: $pinkred; }
+.bg-lightpeach { background-color: $lightpeach; }
+.bg-lightyellow { background-color: $lightyellow; }
+.bg-lightpurple { background-color: $lightpurple; }
 .bg-skyblue { background-color: $skyblue; }
 .bg-kiwi { background-color: $kiwi; }
 .bg-sherbert { background-color: $sherbert; }
+.bg-snow { background-color: $snow; }
 .bg-grey { background-color: $grey; }
 .bg-lightgrey { background-color: $lightgrey; }
 .bg-smoke { background-color: $smoke; }
@@ -432,11 +437,6 @@ $font-size-18: 1.15rem;
 .bg-slate { background-color: $slate; }
 .bg-stone { background-color: $stone; }
 .bg-highlightyellow { background-color: $highlightyellow; }
-.bg-lightpurple { background-color: $lightpurple; }
-.bg-pinkred { background-color: $pinkred; }
-.bg-lightpeach { background-color: $lightpeach; }
-.bg-skyblue { background-color: $skyblue; }
-.bg-lightgreen { background-color: $lightgreen; }
 .bg-assistants-blue { background-color: $assistants-blue; }
 .bg-classmail-blue { background-color: $classmail-blue; }
 }
@@ -458,7 +458,7 @@ $font-size-18: 1.15rem;
 
     &.positive-message {
         border: 1px solid $evergreen;
-        background: $lightgreen;
+        background: $kiwi;
         color: $evergreen;
 
         .icon {
