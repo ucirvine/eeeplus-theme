@@ -43,3 +43,5 @@ run `npm install --save ucirvine/eeeplus-theme#branch-name` in whatever tool to 
 ### Publishing changes
 
 Publish the changes via npm: `npm publish` -- Note the repository requires 2FA to be enabled for you to publish
+
+
