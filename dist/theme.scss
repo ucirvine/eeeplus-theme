@@ -38,7 +38,11 @@ $stone: #828282;
 
 // Not listed in styleguide (but used in MyEEE+, so keeping for compatibility)
 $highlightyellow: #FFFFDD;
-/* Tool specific colors */
+
+// From Nexus orange-dim used for accessibility in announcements
+$orange: rgba(201, 102, 32, 1);
+$orange-light: rgba(249, 240, 235, 1);
+$orange-dim: rgba(164, 74, 11, 1);/* Tool specific colors */
 $assistants-blue: rgba(59, 139, 197, 1);
 $classmail-blue: rgba(59, 139, 197, 1);
 /* Put typography things here */
@@ -298,7 +302,7 @@ $font-size-18: 1.15rem;
 
       .icon {
         &.warning-announcement {
-          color: $sienna;
+          color: $orange-dim;
         }
 
         &.urgent-announcement {
@@ -317,10 +321,10 @@ $font-size-18: 1.15rem;
     }
 
     &.warning-announcement {
-      border: 1px solid $sienna;
+      border: 1px solid $orange-dim;
 
       .header {
-        color: $sienna;
+        color: $orange-dim;
       }
     }
 
@@ -349,10 +353,10 @@ $font-size-18: 1.15rem;
     }
 
     &.multiple {
-      border: 1px solid $stone;
+      border: 1px solid $black;
 
       .header {
-        color: $stone;
+        color: $black;
       }
     }
   }
