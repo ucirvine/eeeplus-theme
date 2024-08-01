@@ -38,13 +38,15 @@ $stone: #828282;
 
 // Not listed in styleguide (but used in MyEEE+, so keeping for compatibility)
 $highlightyellow: #FFFFDD;
+/* Tool specific colors */
+$assistants-blue: rgba(59, 139, 197, 1);
+$classmail-blue: rgba(59, 139, 197, 1);
 
 // From Nexus orange-dim used for accessibility in announcements
 $orange: rgba(201, 102, 32, 1);
 $orange-light: rgba(249, 240, 235, 1);
-$orange-dim: rgba(164, 74, 11, 1);/* Tool specific colors */
-$assistants-blue: rgba(59, 139, 197, 1);
-$classmail-blue: rgba(59, 139, 197, 1);
+$orange-dim: rgba(164, 74, 11, 1);
+
 /* Put typography things here */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,400i,600,700,900');
@@ -317,7 +319,6 @@ $font-size-18: 1.15rem;
           color: $uciblue;
         }
       }
-
     }
 
     &.warning-announcement {
@@ -560,7 +561,7 @@ $font-size-18: 1.15rem;
           margin-bottom: 5px;
 
           a {
-            font-size: $font-size-12;
+            font-size: 12px;
             color: $uciblue;
 
             &:hover {
