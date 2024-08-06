@@ -44,8 +44,8 @@
           margin-bottom: 5px;
 
           a {
-            font-size: $font-size-10;
-            color: $royalblue;
+            font-size: $font-size-10 + 0.1rem;
+            color: $uciblue;
 
             &:hover {
               color: $royalblue;

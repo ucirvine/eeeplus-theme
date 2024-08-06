@@ -18,7 +18,7 @@
 
       .icon {
         &.warning-announcement {
-          color: $sienna;
+          color: $orange-dim;
         }
 
         &.urgent-announcement {
@@ -33,14 +33,13 @@
           color: $uciblue;
         }
       }
-
     }
 
     &.warning-announcement {
-      border: 1px solid $sienna;
+      border: 1px solid $orange-dim;
 
       .header {
-        color: $sienna;
+        color: $orange-dim;
       }
     }
 
@@ -69,10 +68,10 @@
     }
 
     &.multiple {
-      border: 1px solid $stone;
+      border: 1px solid $black;
 
       .header {
-        color: $stone;
+        color: $black;
       }
     }
   }
