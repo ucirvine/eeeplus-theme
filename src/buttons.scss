@@ -2,7 +2,6 @@
 
 .btn-primary, .btn-secondary, .btn-outline-primary {
   border: 2px solid $uciblue;
-  text-transform: uppercase;
   &:hover {
     box-shadow: 0 3px 3px 1px #aaa;
     border-color: $uciblue;
