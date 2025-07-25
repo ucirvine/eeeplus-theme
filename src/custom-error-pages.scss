@@ -1,5 +1,36 @@
 #custom-error-page-container {
-  .big-error-icon {
-    font-size: 12rem;
+  .error-icon {
+    width: 90px;
+    height: auto;
+  }
+
+  .error-code {
+    font-size: 24px;
+  }
+
+  .error-message {
+    font-size: 18px
+  }
+
+  .error-suggestion {
+    font-size: 16px;
+  }
+
+  @media (min-width: 576px) {
+    .error-icon {
+      width: auto;
+    }
+
+    .error-code {
+      font-size: 36px;
+    }
+
+    .error-message {
+      font-size: 22px
+    }
+
+    .error-suggestion {
+      font-size: 18px;
+    }
   }
 }
