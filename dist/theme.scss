@@ -278,8 +278,39 @@ $font-size-18: 1.15rem;
   background-color: $lightyellow;
 }
 #custom-error-page-container {
-  .big-error-icon {
-    font-size: 12rem;
+  .error-icon {
+    width: 90px;
+    height: auto;
+  }
+
+  .error-code {
+    font-size: 24px;
+  }
+
+  .error-message {
+    font-size: 18px
+  }
+
+  .error-suggestion {
+    font-size: 16px;
+  }
+
+  @media (min-width: 576px) {
+    .error-icon {
+      width: auto;
+    }
+
+    .error-code {
+      font-size: 36px;
+    }
+
+    .error-message {
+      font-size: 22px
+    }
+
+    .error-suggestion {
+      font-size: 18px;
+    }
   }
 }
 //TODO: Remove whitespace at bottom of announcements (https://jira.oit.uci.edu/browse/AWTDEV-5045)
